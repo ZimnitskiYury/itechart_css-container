@@ -289,8 +289,30 @@ ul {
     width: 695px;
 }
 
+.how-to-order {
+    height: 703px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.how-to-order_background {
+    position: relative;
+    z-index: 0;
+    margin-left: -69px;
+}
+
+.how-to-order_decor {
+    position: relative;
+    z-index: 1;
+    align-self: center;
+    margin-top: -487px;
+    margin-left: -355px;
+}
+
 .contacts {
-    height: 776.67px;
+    margin-bottom: 0 !important;
+    height: 760px;
     display: flex;
     flex-direction: column;
 }
@@ -310,6 +332,7 @@ ul {
 }
 
 .contacts_feedback {
+    position: relative;
     display: flex;
     flex-direction: row;
 }
@@ -339,6 +362,7 @@ ul {
 }
 
 .feedback_contacts {
+    width: 509px;
     margin-left: 82px;
     font-family: Circe;
     font-size: 20px;
@@ -346,14 +370,33 @@ ul {
 }
 
 .feedback-contacts_socials {
-    margin-top: 100px;
+    margin-top: 94px;
     display: flex;
     justify-content: space-between;
     width: 156px;
+    position: absolute;
+    z-index: 2;
+}
+
+.feedback_image {
+    width: 886px;
+    mix-blend-mode: multiply;
+    position: relative;
+    align-self: center;
+    margin-top: 4px;
+    margin-left: -733px;
+    overflow: hidden;
+}
+
+.feedback_image>img {
+    height: 636px;
+    width: 954px;
 }
 
 footer {
-    height: 160px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    height: 155px;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: space-around;
