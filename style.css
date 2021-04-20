@@ -310,6 +310,66 @@ ul {
     margin-left: -355px;
 }
 
+.how-to-order_instruction {
+    z-index: 2;
+    font-family: 'Playfair Display Bold';
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-left: 816px;
+    margin-top: -230px;
+}
+
+.how-to-order_instruction>p {
+    margin-left: 15px;
+}
+
+.instruction_order {
+    margin-top: 17px;
+    counter-reset: item;
+}
+
+.instruction_order>li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 490px;
+    margin-bottom: 14px;
+}
+
+.instruction_order>li:before {
+    text-align: right;
+    min-width: 33.64px;
+    display: block;
+    line-height: 64.25px;
+    content: counter(item) "";
+    counter-increment: item;
+    font-family: 'Playfair Display Bold';
+    font-size: 64.25px;
+    color: #FFFFFF;
+}
+
+.order {
+    margin-top: 19px;
+    margin-left: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order_title {
+    font-family: 'Circe Bold';
+    font-size: 21px;
+    letter-spacing: 0.21px;
+    line-height: 27px;
+}
+
+.order_annotation {
+    font-family: 'Circe';
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: 4px;
+}
+
 .contacts {
     margin-bottom: 0 !important;
     height: 760px;
