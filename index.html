@@ -7,12 +7,12 @@
 
 <body>
     <header class="container">
-        <div class="nav--logo">
-            <h5 class="logo--text">Cakes</h5>
+        <div class="nav__logo">
+            <h5 class="logo__text">Cakes</h5>
         </div>
 
         <nav>
-            <ul class="nav--list">
+            <ul class="nav__list">
                 <li>Наши торты</li>
                 <li>Индивидуальный заказ</li>
                 <li>Отзывы</li>
@@ -21,22 +21,22 @@
                 <li>Контакты</li>
             </ul>
         </nav>
-        <div class="nav--phone">
+        <div class="nav__phone">
             +7 906 899 92 96
         </div>
     </header>
     <section class="main-page container">
-        <div class="main-page--left-info">
-            <div class="left-info--title">
+        <div class="main-page__left-info">
+            <div class="left-info__title">
                 <h1 class="title">Торты <br/>на заказ</h1>
-                <h3 class="title--annotation">Ручная работа</h3>
+                <h3 class="title__annotation">Ручная работа</h3>
             </div>
-            <div class="left-info--button">
+            <div class="left-info__button">
                 <button>Выбрать торт</button>
             </div>
 
-            <div class="left-info--promo">
-                <ul class="promo--list">
+            <div class="left-info__promo">
+                <ul class="promo__list">
                     <li>
                         <img src="assets/img/natural-prod.png" height="55" />
                         <h6>Натуральные<br/>ингредиенты</h6>
@@ -48,28 +48,28 @@
                 </ul>
             </div>
         </div>
-        <div class="main-page--right-info">
-            <div class="right-info--image">
+        <div class="main-page__right-info">
+            <div class="right-info__image">
                 <img src="./assets/img/main-page-cake.png" />
             </div>
         </div>
-        <div class="main-page_decor-berry-2">
+        <div class="main-page__decor-berry-2">
             <img src="./assets/img/berry-2.png" />
         </div>
-        <div class="main-page_decor-berry-1">
+        <div class="main-page__decor-berry-1">
             <img src="./assets/img/berry-1.png" />
         </div>
     </section>
     <section class="our-cakes container">
-        <div class="our-cakes_title">
+        <div class="our-cakes__title">
             <h2>Наши торты</h2>
         </div>
-        <div class="our-cakes_category">
-            <div class="category-template_main">
-                <h4 class="category-template_title">Классические</h4>
-                <h5 class="category-template_annotation">24 вида</h5>
+        <div class="our-cakes__category">
+            <div class="category-template__main">
+                <h4 class="category-template__title">Классические</h4>
+                <h5 class="category-template__annotation">24 вида</h5>
                 <img src="./assets/img/category-classic.png" />
-                <h6 class="category-template_link">Смотреть</h6>
+                <h6 class="category-template__link">Смотреть</h6>
             </div>
             <div class="category-template">
 
@@ -79,50 +79,73 @@
             </div>
         </div>
     </section>
-    <section class="how-to-order" style="background-color: pink;">
-        <div class="how-to-order_background">
+    <section class="how-to-order">
+        <div class="how-to-order__background">
             <img src="./assets/img/order-background.png" alt="order-background">
         </div>
-        <div class="how-to-order_decor">
+        <div class="how-to-order__decor">
             <img src="./assets/img/order-decor.png" alt="order-decor">
+        </div>
+        <div class="how-to-order__instruction">
+            <p>Как заказать</p>
+            <ol class="instruction__order">
+                <li>
+                    <div class="order">
+                        <h6 class="order__title">Срок заказа</h6>
+                        <p class="order__annotation">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="order">
+                        <h6 class="order__title">Доставка по городу</h6>
+                        <p class="order__annotation">Доставка в пределах города 200 рублей , при заказе на сумму более 2000 доставка бесплатно.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="order">
+                        <h6 class="order__title">Доставка за городом</h6>
+                        <p class="order__annotation">Доставка за пределами города рассчитывается индивидуально.</p>
+                    </div>
+                </li>
+            </ol>
         </div>
     </section>
     <section class="contacts container">
-        <div class="contacts_title">Контакты</div>
-        <div class="contacts_annotation">Остались вопросы?</div>
-        <div class="contacts_feedback">
-            <div class="feedback_form">
+        <div class="contacts__title">Контакты</div>
+        <div class="contacts__annotation">Остались вопросы?</div>
+        <div class="contacts__feedback">
+            <div class="feedback__form">
                 <form action="/action">
                     <p>Заполните форму ниже и наш кондитер свяжется с вами</p>
-                    <input type="text" class="feedback-form_input" placeholder="Ваше имя" name="name" id='name' required>
+                    <input type="text" class="feedback-form__input" placeholder="Ваше имя" name="name" id='name' required>
                     <br>
-                    <input type="text" class="feedback-form_input" placeholder="Email адрес" name="email" id='email' required>
+                    <input type="text" class="feedback-form__input" placeholder="Email адрес" name="email" id='email' required>
                     <br>
-                    <input type="text" class="feedback-form_input" placeholder="Ваш вопрос" name="question" id='question' required>
-                    <div class="feedback-form_button">
+                    <input type="text" class="feedback-form__input" placeholder="Ваш вопрос" name="question" id='question' required>
+                    <div class="feedback-form__button">
                         <button>Отправить</button>
                     </div>
                 </form>
             </div>
-            <div class="feedback_contacts">
+            <div class="feedback__contacts">
                 <p>Или позвоните по телефону: +7 906 899 92 96 <br> Наша почта : bakerybypavel@mail.ru <br> Мы в соц. сетях:</p>
-                <div class="feedback-contacts_socials">
+                <div class="feedback-contacts__socials">
                     <a href="https://instagram.com"><img src="./assets/img/social_instagram_circle.png" alt="Наш инстаграм"></a>
                     <a href="https://vk.com"><img src="./assets/img/social_vk_circle.png" alt="Наш Вк"></a>
                 </div>
             </div>
-            <div class="feedback_image">
+            <div class="feedback__image">
                 <img src="./assets/img/feedback-page-berries.png">
             </div>
         </div>
     </section>
     <footer class="container">
-        <div class="footer_menu">
-            <div class="footer_logo">
-                <h5 class="logo_text">Cakes</h5>
+        <div class="footer__menu">
+            <div class="footer__logo">
+                <h5 class="logo__text">Cakes</h5>
             </div>
             <nav>
-                <ul class="footer nav_list">
+                <ul class="footer nav__list">
                     <li>Наши торты</li>
                     <li>Индивидуальный заказ</li>
                     <li>Отзывы</li>
@@ -131,12 +154,12 @@
                     <li>Контакты</li>
                 </ul>
             </nav>
-            <div class="footer_social">
+            <div class="footer__social">
                 <a href="https://instagram.com"><img src="./assets/img/social_instagram.png" alt="Наш инстаграм" /></a>
                 <a href="https://vk.com"><img src="./assets/img/social_vk.png" alt="Наш Вк" /></a>
             </div>
         </div>
-        <div class="footer_credentials">
+        <div class="footer__credentials">
             <hr>
             <br>
             <h6>&#169; 2018, Cakes</h6>

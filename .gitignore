@@ -348,3 +348,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+#Ignore node.js
+node_modules/
+.csscomb.json
+package.json
+package-lock.json
