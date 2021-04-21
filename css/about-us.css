@@ -39,11 +39,15 @@
 }
 
 .about-us__dictum > h4 {
+    color: #2d2829;
+
     font-family: "Circe Bold";
     font-size: 20px;
 }
 
 .about-us__dictum > p {
+    color: #2d2829;
+
     font-family: "Circe";
     font-size: 18px;
 }

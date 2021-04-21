@@ -1,0 +1,125 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 60px;
+
+    align-items: center;
+}
+
+.reviews__header {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+
+    height: 170px;
+
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.reviews__header-decor-left {
+    margin-top: -120px;
+    margin-left: -68px;
+}
+
+.reviews__header-decor-right {
+    margin-top: -120px;
+    margin-right: -68px;
+}
+
+.reviews__title {
+    display: block;
+
+    letter-spacing: 0.4px;
+
+    color: #2d2829;
+
+    font-family: "Playfair Display Bold";
+    font-size: 40px;
+    line-height: 66px;
+}
+
+.reviews__content {
+    display: flex;
+    flex-direction: row;
+
+    width: 840px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews__content__left {
+    width: 9px;
+    height: 16px;
+    margin-right: 100px;
+}
+
+.reviews__content__right {
+    width: 9px;
+    height: 16px;
+    margin-left: 100px;
+}
+
+.reviews__dictum {
+    display: flex;
+    flex-direction: column;
+
+    margin: 53px 0 53px 53px;
+
+    align-items: flex-start;
+}
+
+.reviews__dictum > h3 {
+    color: #2d2829;
+
+    font-family: "Circe Bold";
+    font-size: 27px;
+}
+
+.reviews__dictum > h4 {
+    color: #2d2829;
+
+    font-family: "Circe";
+    font-size: 20px;
+}
+
+.reviews__dictum > h5 {
+    color: #2d2829;
+
+    font-family: "Circe";
+    font-size: 18.42px;
+}
+
+.reviews__dictum__more {
+    display: flex;
+    flex-direction: row;
+
+    width: 360px;
+    margin: 20px 0;
+
+    justify-content: flex-end;
+}
+
+.reviews__dictum__more > h6 {
+    display: block;
+
+    opacity: 0.7;
+    color: #f50049;
+
+    font-family: "Circe";
+    font-size: 17.9px;
+}
+
+.reviews__dictum__more > a {
+    display: block;
+
+    margin-right: 22px;
+
+    opacity: 0.7;
+    color: #f50049;
+
+    font-family: "Circe";
+    font-size: 15.9px;
+}
