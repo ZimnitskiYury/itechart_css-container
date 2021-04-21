@@ -1,0 +1,37 @@
+.our-comment {
+    display: flex;
+    flex-direction: column;
+
+    height: 460px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.our-comment__title {
+    display: block;
+
+    color: #fffefe;
+
+    font-family: "Playfair Display Bold";
+    font-size: 140px;
+    line-height: 50px;
+}
+
+.our-comment__annotation {
+    display: block;
+
+    width: 815px;
+
+    text-align: center;
+
+    color: #2d2829;
+
+    font-family: "Playfair Display Bold Italic";
+    font-size: 25px;
+}
+
+.our-comment__autograph {
+    width: 149px;
+    height: 73px;
+}

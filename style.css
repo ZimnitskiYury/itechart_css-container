@@ -1,5 +1,6 @@
 @import url("./css/normalize.css");
 @import url("./css/our-advantages.css");
+@import url("./css/our-comment.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
     font-family: "Circe";
@@ -23,6 +24,14 @@
     font-style: normal;
 
     src: local("Playfair Display Bold"), url("./assets/fonts/PlayfairDisplay-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Playfair Display Bold Italic";
+    font-weight: normal;
+    font-style: normal;
+
+    src: local("Playfair Display Bold"), url("./assets/fonts/PlayfairDisplay-BoldItalic.woff") format("woff");
 }
 
 @font-face {
