@@ -1,0 +1,39 @@
+.nav__logo {
+    display: flex;
+}
+
+.logo__text {
+    letter-spacing: 1.16px;
+
+    color: #2d2829;
+
+    font-family: "Playfair Display Bold";
+    font-size: 23.24px;
+}
+
+.nav__list {
+    display: flex;
+
+    width: 746px;
+    margin-left: 43px;
+
+    justify-content: space-between;
+}
+
+.nav__list > li {
+    text-transform: uppercase;
+
+    color: #2d2829;
+
+    font-family: "Circe";
+    font-size: 13px;
+}
+
+.nav__phone {
+    margin-left: auto;
+
+    color: #2d2829;
+
+    font-family: "Circe Bold";
+    font-size: 15px;
+}

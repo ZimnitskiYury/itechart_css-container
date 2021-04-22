@@ -1,0 +1,99 @@
+.how-to-order {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    height: 703px;
+}
+
+.how-to-order__background {
+    position: relative;
+    z-index: 0;
+
+    margin-left: -69px;
+}
+
+.how-to-order__decor {
+    position: relative;
+    z-index: 1;
+
+    margin-top: -487px;
+    margin-left: -355px;
+
+    align-self: center;
+}
+
+.how-to-order__instruction {
+    z-index: 2;
+
+    margin-top: -230px;
+    margin-left: 816px;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display Bold";
+    font-size: 40px;
+}
+
+.how-to-order__instruction > p {
+    margin-left: 15px;
+}
+
+.instruction__order {
+    margin-top: 17px;
+
+    counter-reset: item;
+}
+
+.instruction__order > li {
+    display: flex;
+    flex-direction: row;
+
+    width: 490px;
+    min-height: 122px;
+    margin-bottom: 14px;
+
+    align-items: flex-start;
+}
+
+.instruction__order > li:before {
+    display: block;
+
+    min-width: 33.64px;
+
+    content: counter(item) "";
+    counter-increment: item;
+    text-align: right;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display Bold";
+    font-size: 64.25px;
+    line-height: 64.25px;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 19px;
+    margin-left: 17px;
+}
+
+.order__title {
+    letter-spacing: 0.21px;
+
+    font-family: "Circe Bold";
+    font-size: 21px;
+    line-height: 27px;
+}
+
+.order__annotation {
+    margin-top: 4px;
+
+    letter-spacing: 0;
+
+    font-family: "Circe";
+    font-size: 20px;
+    line-height: 24px;
+}

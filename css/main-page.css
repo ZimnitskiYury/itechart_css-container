@@ -1,0 +1,111 @@
+.main-page {
+    overflow: visible;
+
+    height: 772px;
+
+    align-items: center;
+}
+
+.main-page__left-info {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 90px;
+
+    align-self: flex-start;
+}
+
+.title {
+    letter-spacing: 5.87px;
+
+    color: #2e2829;
+
+    font-family: "Playfair Display Bold";
+    font-size: 78.3px;
+    line-height: 70px;
+}
+
+.title__annotation {
+    margin-top: 20px;
+
+    color: #32313d;
+
+    font-family: "Intro Script Base";
+    font-size: 40.83px;
+}
+
+.left-info__button {
+    width: 226px;
+    margin-top: 57px;
+}
+
+.left-info__promo {
+    margin-top: 60px;
+}
+
+.promo__list {
+    display: flex;
+    flex-direction: row;
+
+    width: 484px;
+    margin-top: 68px;
+
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.promo__list > li {
+    display: flex;
+    flex-direction: row;
+
+    align-content: center;
+    justify-content: space-between;
+}
+
+.promo__list > li h6 {
+    display: block;
+
+    margin-left: 12px;
+
+    font-family: "Circe";
+    font-size: 14px;
+
+    align-self: center;
+}
+
+.main-page__right-info {
+    z-index: 0;
+
+    width: 809px;
+    margin-top: -51px;
+    margin-left: 26px;
+
+    align-self: baseline;
+}
+
+.right-info__image {
+    overflow: hidden;
+}
+
+.right-info__image > img {
+    width: 964px;
+    height: 963px;
+}
+
+.main-page__decor-berry-1 {
+    position: relative;
+
+    margin-top: -15px;
+    margin-left: -348px;
+
+    align-self: auto;
+}
+
+.main-page__decor-berry-2 {
+    position: relative;
+
+    margin-top: -35px;
+    margin-left: -856px;
+
+    align-self: flex-start;
+}
