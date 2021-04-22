@@ -60,26 +60,92 @@
             <img src="./assets/img/berry-1.png" />
         </div>
     </section>
-    <section class="our-cakes container">
-        <div class="our-cakes__title">
-            <h2>Наши торты</h2>
+    <section class="individual-order">
+        <div class="individual-order__header">
+            <h2 class="individual-order__title">Индивидуальный заказ</h2>
+            <h3 class="individual-order__annotation">Соберите торт в 3 шага</h3>
         </div>
-        <div class="our-cakes__category">
-            <div class="category-template__main">
-                <h4 class="category-template__title">Классические</h4>
-                <h5 class="category-template__annotation">24 вида</h5>
-                <img src="./assets/img/category-classic.png" />
-                <h6 class="category-template__link">Смотреть</h6>
+        <div class="individual-order__step-one">
+            <div class="individual-order__step-one-header">
+                <h2>01</h2>
+                <p>Выберите начинку</p>
             </div>
-            <div class="category-template">
+            <img class="individual-order__arrow__left" src="./assets/img/Arrow-Left-Icon.png" alt="Arrow-Left-Icon">
+            <div style="background-color: #fbebea;">
+                <img src="./assets/img/step-one.png" alt="step-one">
+            </div>
+            <div class="individual-order__step-one-content">
+                <h3>Шоколадный ганаш</h3>
+                <p>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                <h4>1000 руб/кг</h4>
+                <button>Выбрать</button>
 
             </div>
-            <div class="category-template">
+            <h5>1/12</h5>
+            <img class="individual-order__arrow__right" src="./assets/img/Arrow-Right-Icon.png" alt="Arrow-Right-Icon">
+            <div></div>
+        </div>
+        <div class="individual-order__step-two">
+            <div class="individual-order__step-two-header">
+                <h2>02</h2>
+                <p>Размер</p>
+            </div>
+            <div class="individual-order__size">
+                <div class="individual-order__select-size">
+                    <img src="./assets/img/size-1.png" alt="size-1" style="width: 110px;">
+                    <p>17-18 см <br>(1 кг – 6 персон)</p>
+                </div>
+                <div class="individual-order__select-size" style="width: 153px;">
+                    <img src="./assets/img/size-2.png" alt="size-2">
+                    <p>23-24 см <br>(10–12 персон)</p>
+                </div>
+                <div class="individual-order__select-size" style="width: 171px;">
+                    <img src="./assets/img/size-3.png" alt="size-3">
+                    <p>Два яруса 25 и 20 см (15–20 персон)</p>
+                </div>
+                <div class="individual-order__select-size" style="width: 199px;">
+                    <img src="./assets/img/size-4.png" alt="size-4">
+                    <p>Три яруса 30,25 и 18 см <br>(25–30 персон)</p>
+                </div>
+            </div>
+        </div>
+        <div class="individual-order__final-step">
+            <div class="individual-order__step-three">
+                <div class="individual-order__step-three-header">
+                    <h2>03</h2>
+                    <p>Оформление</p>
+                    <img src="./assets/img/step-3-cake.png" alt="step-3-cake">
+                </div>
+                <img class="individual-order__arrow__left" src="./assets/img/Arrow-Left-Icon.png" alt="Arrow-Left-Icon">
+                <div class="individual-order__decorative">
+                    <div class="individual-order__decorative-variant">
+                        <img src="./assets/img/decorative-1.png" alt="decorative-1">
+                        <h3>Ягодное ассорти</h3>
+                        <h4>700 руб/кг</h4>
+                    </div>
+                    <div class="individual-order__decorative-variant">
+                        <img src="./assets/img/decorative-2.png" alt="decorative-2">
+                        <h3>Маршмэллоу</h3>
+                        <h4>600 руб/кг</h4>
+                    </div>
+                </div>
+                <h5>2/12</h5>
+                <img class="individual-order__arrow__right" src="./assets/img/Arrow-Right-Icon.png" alt="Arrow-Right-Icon">
+            </div>
+            <div class="individual-order__summary">
+                <h2>Ваш выбор</h2>
 
+                <form class="individual-order__form" action="/action">
+                    <input class="individual-order__form-input" type="text" placeholder="Начинка" name="name" id='name' required>
+
+                    <input class="individual-order__form-input" type="text" placeholder="Размер" name="size" id='size' required>
+
+                    <input class="individual-order__form-input" type="text" placeholder="Оформление" name="decorative" id='decorative' required>
+                    <button class="individual-order__form-button">Заказать</button>
+                </form>
             </div>
         </div>
     </section>
-    <section class="individual-order"></section>
     <section class="reviews">
         <div class="reviews__header">
             <img class="reviews__header-decor-left" src="./assets/img/reviews-decor-left.png" alt="reviews-decor-left">

@@ -12,6 +12,7 @@
     overflow: hidden;
     flex-direction: row;
 
+    width: 1366px;
     height: 170px;
 
     align-items: flex-end;
