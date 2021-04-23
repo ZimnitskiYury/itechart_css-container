@@ -3,123 +3,109 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header class="container">
-        <div class="nav__logo">
-            <h5 class="logo__text">Cakes</h5>
+    <header class="header">
+        <div class="header__logo">
+            <a href="./index.html" class="header__logo-link">Cakes</a>
         </div>
-
-        <nav>
-            <ul class="nav__list">
-                <li>Наши торты</li>
-                <li>Индивидуальный заказ</li>
-                <li>Отзывы</li>
-                <li>О нас</li>
-                <li>Как заказать</li>
-                <li>Контакты</li>
+        <nav id="menu">
+            <ul class="header__nav">
+                <li><a href="#categories">Наши торты</a></li>
+                <li><a href="#individual-order">Индивидуальный заказ</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#about-us">О нас</a></li>
+                <li><a href="#how-to-order">Как заказать</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
-        <div class="nav__phone">
-            +7 906 899 92 96
-        </div>
+        <a href="tel:+7 906 899 92 96" class="header__phone">+7 906 899 92 96</a>
     </header>
-    <section class="main-page container">
+    <section class="main-page">
         <div class="main-page__left-info">
-            <div class="left-info__title">
-                <h1 class="title">Торты <br/>на заказ</h1>
-                <h3 class="title__annotation">Ручная работа</h3>
-            </div>
-            <div class="left-info__button">
-                <button>Выбрать торт</button>
-            </div>
-
-            <div class="left-info__promo">
-                <ul class="promo__list">
-                    <li>
-                        <img src="assets/img/natural-prod.png" height="55" />
-                        <h6>Натуральные<br/>ингредиенты</h6>
-                    </li>
-                    <li>
-                        <img src="assets/img/delivery-free.png" height="55" />
-                        <h6>Доставка бесплатно при заказе<br/>от 2000 рублей*</h6>
-                    </li>
-                </ul>
-            </div>
+            <h1 class="main-page__title">Торты <br/>на заказ</h1>
+            <h2 class="main-page__annotation">Ручная работа</h2>
+            <button class="main-page__button">Выбрать торт</button>
+            <ul class="main-page__list">
+                <li>
+                    <img src="assets/img/natural-prod.png" height="55" />
+                    <h6>Натуральные<br/>ингредиенты</h6>
+                </li>
+                <li>
+                    <img src="assets/img/delivery-free.png" height="55" />
+                    <h6>Доставка бесплатно<br/>при заказе от 2000 рублей*</h6>
+                </li>
+            </ul>
         </div>
-        <div class="main-page__right-info">
-            <div class="right-info__image">
-                <img src="./assets/img/main-page-cake.png" />
-            </div>
-        </div>
-        <div class="main-page__decor-berry-2">
-            <img src="./assets/img/berry-2.png" />
-        </div>
-        <div class="main-page__decor-berry-1">
-            <img src="./assets/img/berry-1.png" />
+        <div class="main-page__decoration">
+            <img class="main-page__decor-berry-1" src="./assets/img/berry-1.png" alt="berry-1" />
+            <img class="main-page__decor-berry-3" src="./assets/img/berry-3.png" alt="berry-3" />
+            <img class="main-page__decor-berry-2" src="./assets/img/berry-2.png" alt="berry-2" />
+            <img class="main-page__cake" src="./assets/img/main-page-cake.png" />
         </div>
     </section>
-    <section class="categories">
+    <section class="categories" id="categories">
         <h2 class="categories__title">Наши торты</h2>
         <div class="categories__container">
             <div class="categories__big-tile">
-                <h3 class="categories__name">Классические</h3>
+                <a href="/next" class="categories__name">Классические</a>
                 <h4 class="categories__count">24 вида</h4>
                 <img class="categories__image" src="./assets/img/category-classic.png" alt="category-classic">
                 <div class="categories__more">
-                    <h4>Смотреть</h4>
-                    <img src="./assets/img/more-arrow.png" alt="more-arrow">
+                    <a href="/next">Смотреть</a>
+                    <a href="/next"><img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
             </div>
             <div class="categories__small-tile-container">
                 <div class="categories__small-tile">
-                    <h3 class="categories__name">Муссовые</h3>
+                    <a href="/next" class="categories__name">Муссовые</a>
                     <h4 class="categories__count">12 видов</h4>
                     <img class="categories__image" src="./assets/img/category-muss.png" alt="category-muss">
                     <div class="categories__more">
-                        <img src="./assets/img/more-arrow.png" alt="more-arrow">
+                        <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                     </div>
                 </div>
                 <div class="categories__small-tile">
-                    <h3 class="categories__name">Свадебные</h3>
+                    <a href="/next" class="categories__name">Свадебные</a>
                     <h4 class="categories__count">20 видов</h4>
                     <img class="categories__image" src="./assets/img/category-wedding.png" alt="category-wedding">
                     <div class="categories__more">
-                        <img src="./assets/img/more-arrow.png" alt="more-arrow">
+                        <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                     </div>
                 </div>
             </div>
             <div class="categories__small-tile-container">
                 <div class="categories__small-tile">
-                    <h3 class="categories__name">Мужчинам</h3>
+                    <a href="/next" class="categories__name">Мужчинам</a>
                     <h4 class="categories__count">24 вида</h4>
                     <img class="categories__image" src="./assets/img/category-mens.png" alt="category-mens">
                     <div class="categories__more">
-                        <img src="./assets/img/more-arrow.png" alt="more-arrow">
+                        <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                     </div>
                 </div>
                 <div class="categories__small-tile">
-                    <h3 class="categories__name">Женщинам</h3>
+                    <a href="/next" class="categories__name">Женщинам</a>
                     <h4 class="categories__count">16 видов</h4>
                     <img class="categories__image" src="./assets/img/category-women.png" alt="category-women">
                     <div class="categories__more">
-                        <img src="./assets/img/more-arrow.png" alt="more-arrow">
+                        <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                     </div>
                 </div>
             </div>
             <div class="categories__big-tile">
-                <h3 class="categories__name">Детские</h3>
+                <a href="/next" class="categories__name">Детские</a>
                 <h4 class="categories__count">18 видов</h4>
                 <img class="categories__image" src="./assets/img/category-children.png" alt="category-children">
                 <div class="categories__more">
-                    <h4>Смотреть</h4>
-                    <img src="./assets/img/more-arrow.png" alt="more-arrow">
+                    <a href="/next">Смотреть</a>
+                    <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="individual-order">
+    <section class="individual-order" id="individual-order">
         <div class="individual-order__header">
             <h2 class="individual-order__title">Индивидуальный заказ</h2>
             <h3 class="individual-order__annotation">Соберите торт в 3 шага</h3>
@@ -175,37 +161,45 @@
                     <p>Оформление</p>
                     <img src="./assets/img/step-3-cake.png" alt="step-3-cake">
                 </div>
-                <img class="individual-order__arrow__left" src="./assets/img/Arrow-Left-Icon.png" alt="Arrow-Left-Icon">
+                <img class="individual-order__step-three__left" src="./assets/img/Arrow-Left-Icon.png" alt="Arrow-Left-Icon">
                 <div class="individual-order__decorative">
                     <div class="individual-order__decorative-variant">
-                        <img src="./assets/img/decorative-1.png" alt="decorative-1">
+                        <img class="individual-order__decorative-variant-image" src="./assets/img/decorative-1.png" alt="decorative-1">
                         <h3>Ягодное ассорти</h3>
                         <h4>700 руб/кг</h4>
                     </div>
                     <div class="individual-order__decorative-variant">
-                        <img src="./assets/img/decorative-2.png" alt="decorative-2">
+                        <img class="individual-order__decorative-variant-image" src="./assets/img/decorative-2.png" alt="decorative-2">
                         <h3>Маршмэллоу</h3>
                         <h4>600 руб/кг</h4>
                     </div>
                 </div>
                 <h5>2/12</h5>
-                <img class="individual-order__arrow__right" src="./assets/img/Arrow-Right-Icon.png" alt="Arrow-Right-Icon">
+                <img class="individual-order__step-three__right" src="./assets/img/Arrow-Right-Icon.png" alt="Arrow-Right-Icon">
             </div>
             <div class="individual-order__summary">
                 <h2>Ваш выбор</h2>
 
                 <form class="individual-order__form" action="/action">
-                    <input class="individual-order__form-input" type="text" placeholder="Начинка" name="name" id='name' required>
+                    <div class="individual-order__form-input-column">
+                        <p>Начинка</p>
+                        <input class="individual-order__form-input" type="text" placeholder="Начинка" name="name" id='name' required>
+                    </div>
 
-                    <input class="individual-order__form-input" type="text" placeholder="Размер" name="size" id='size' required>
-
-                    <input class="individual-order__form-input" type="text" placeholder="Оформление" name="decorative" id='decorative' required>
+                    <div class="individual-order__form-input-column">
+                        <p>Размер</p>
+                        <input class="individual-order__form-input" type="text" placeholder="Размер" name="size" id='size' required>
+                    </div>
+                    <div class="individual-order__form-input-column">
+                        <p>Оформление</p>
+                        <input class="individual-order__form-input" type="text" placeholder="Оформление" name="decorative" id='decorative' required>
+                    </div>
                     <button class="individual-order__form-button">Заказать</button>
                 </form>
             </div>
         </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="reviews__header">
             <img class="reviews__header-decor-left" src="./assets/img/reviews-decor-left.png" alt="reviews-decor-left">
             <h2 class="reviews__title">Отзывы</h2>
@@ -226,7 +220,7 @@
             <img class="reviews__content__right" src="./assets/img/Arrow-Right-Icon.png" alt="Arrow-Right-Icon">
         </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <div class="about-us__content">
             <h2 class="about-us__title">О нас</h2>
             <div class="about-us__confectioner">
@@ -235,7 +229,7 @@
                     <h4>Кондитер – как призвание</h4>
                     <p>Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство. С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.</p>
                 </div>
-                <div class="about-us__dictum">
+                <div class="about-us__dictum" style="margin-top: 20px;">
                     <h4>Принцип – натуральные ингредиенты</h4>
                     <p>Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.</p>
                 </div>
@@ -288,7 +282,7 @@
             </div>
         </div>
     </section>
-    <section class="how-to-order">
+    <section class="how-to-order" id="how-to-order">
         <div class="how-to-order__background">
             <img src="./assets/img/order-background.png" alt="order-background">
         </div>
@@ -319,7 +313,7 @@
             </ol>
         </div>
     </section>
-    <section class="contacts container">
+    <section class="contacts" id="contacts">
         <div class="contacts__title">Контакты</div>
         <div class="contacts__annotation">Остались вопросы?</div>
         <div class="contacts__feedback">
@@ -348,7 +342,7 @@
             </div>
         </div>
     </section>
-    <footer class="container">
+    <footer>
         <div class="footer__menu">
             <div class="footer__logo">
                 <h5 class="logo__text">Cakes</h5>
@@ -374,6 +368,18 @@
             <h6>&#169; 2018, Cakes</h6>
         </div>
     </footer>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#menu").on("click", "a", function(event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({
+                    scrollTop: top
+                }, 1500);
+            });
+        });
+    </script>
 </body>
 
 </html>

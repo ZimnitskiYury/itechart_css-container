@@ -4,7 +4,7 @@
 
     width: 1220px;
     height: 516px;
-    margin: 0 auto;
+    margin: 180px auto 0 auto;
 }
 
 .about-us__persone {
@@ -18,9 +18,9 @@
 }
 
 .about-us__title {
-    letter-spacing: 0.4px;
+    margin-top: 6px;
 
-    color: #2d2829;
+    letter-spacing: 0.4px;
 
     font-family: "Playfair Display Bold";
     font-size: 40px;
@@ -28,6 +28,8 @@
 }
 
 .about-us__confectioner > h3 {
+    margin-top: 16px;
+
     color: #32313d;
 
     font-family: "Intro Script Base";
@@ -46,8 +48,11 @@
 }
 
 .about-us__dictum > p {
+    margin-top: 8px;
+
     color: #2d2829;
 
     font-family: "Circe";
     font-size: 18px;
+    line-height: 24px;
 }

@@ -30,7 +30,7 @@
 }
 
 .reviews__title {
-    display: block;
+    margin-top: -35px;
 
     letter-spacing: 0.4px;
 
@@ -46,6 +46,7 @@
     flex-direction: row;
 
     width: 840px;
+    height: 260px;
 
     align-items: center;
     justify-content: center;
@@ -67,7 +68,7 @@
     display: flex;
     flex-direction: column;
 
-    margin: 53px 0 53px 53px;
+    margin: 60px 0 0 53px;
 
     align-items: flex-start;
 }
@@ -80,6 +81,8 @@
 }
 
 .reviews__dictum > h4 {
+    margin-top: 6px;
+
     color: #2d2829;
 
     font-family: "Circe";
@@ -87,10 +90,15 @@
 }
 
 .reviews__dictum > h5 {
+    margin-top: 12px;
+
+    letter-spacing: 0.00px;
+
     color: #2d2829;
 
     font-family: "Circe";
     font-size: 18.42px;
+    line-height: 24.6px;
 }
 
 .reviews__dictum__more {

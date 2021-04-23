@@ -4,8 +4,8 @@
     flex-direction: column;
 
     height: 1280px;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-top: 42px;
+    margin-bottom: 0;
 
     align-items: center;
 }
@@ -27,7 +27,7 @@
 .our-advantages__annotation {
     display: block;
 
-    margin-top: 15px;
+    margin-top: 20px;
 
     color: #32313d;
 
@@ -42,6 +42,7 @@
     flex-direction: row;
 
     width: 1368px;
+    margin-top: 12px;
 
     justify-content: flex-start;
 }
@@ -91,6 +92,8 @@
 }
 
 .natural-product_annotatiton p {
+    margin-top: 6px;
+
     letter-spacing: 0;
 
     font-family: "Circe";

@@ -1,9 +1,22 @@
-.nav__logo {
+.header {
     display: flex;
+    flex-direction: row;
+
+    width: 1220px;
+    margin: 58px auto 0 auto;
+
+    align-items: baseline;
 }
 
-.logo__text {
-    letter-spacing: 1.16px;
+.header__logo {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.header__logo-link {
+    letter-spacing: 1.162px;
 
     color: #2d2829;
 
@@ -11,16 +24,16 @@
     font-size: 23.24px;
 }
 
-.nav__list {
+.header__nav {
     display: flex;
 
     width: 746px;
-    margin-left: 43px;
+    margin-left: 44px;
 
     justify-content: space-between;
 }
 
-.nav__list > li {
+.header__nav a {
     text-transform: uppercase;
 
     color: #2d2829;
@@ -29,7 +42,7 @@
     font-size: 13px;
 }
 
-.nav__phone {
+.header__phone {
     margin-left: auto;
 
     color: #2d2829;

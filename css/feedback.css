@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
 
+    width: 1220px;
     height: 760px;
-    margin-bottom: 0 !important;
+    margin: 64px auto 0 auto;
 }
 
 .contacts__title {
@@ -17,6 +18,8 @@
 }
 
 .contacts__annotation {
+    margin-top: 22px;
+
     color: #32313d;
 
     font-family: "Intro Script Base";
@@ -31,6 +34,8 @@
 }
 
 .feedback__form p {
+    margin-top: 19px;
+
     color: #000000;
 
     font-family: "Circe";
@@ -39,7 +44,7 @@
 
 .feedback-form__input {
     width: 550px;
-    margin-top: 26px;
+    margin-top: 32px;
     padding: 7px 0;
 
     transition: border-color 0.2s;
@@ -55,11 +60,12 @@
 
 .feedback-form__button {
     width: 180px;
-    margin-top: 80px;
+    margin-top: 74px;
 }
 
 .feedback__contacts {
-    width: 509px;
+    width: 519px;
+    margin-top: 16px;
     margin-left: 82px;
 
     font-family: Circe;
@@ -74,7 +80,7 @@
     display: flex;
 
     width: 156px;
-    margin-top: 94px;
+    margin-top: 26px;
 
     justify-content: space-between;
 }
@@ -82,17 +88,15 @@
 .feedback__image {
     position: relative;
 
-    overflow: hidden;
-
     width: 886px;
-    margin-top: 4px;
-    margin-left: -733px;
+    margin-top: 24px;
+    margin-left: -425px;
 
     align-self: center;
     mix-blend-mode: multiply;
 }
 
 .feedback__image > img {
-    width: 954px;
+    width: 886px;
     height: 636px;
 }

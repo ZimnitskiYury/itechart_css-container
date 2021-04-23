@@ -1,11 +1,11 @@
 footer {
-    flex-direction: column !important;
+    flex-direction: column;
 
+    width: 1220px;
     height: 155px;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin: 60px auto 0 auto;
 
-    align-items: center !important;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -19,8 +19,9 @@ footer {
     justify-content: space-between;
 }
 
-.footer .nav__list {
+.nav__list {
     display: flex;
+    flex-direction: row;
 
     width: 734.75px;
 
@@ -28,13 +29,13 @@ footer {
     justify-content: space-between;
 }
 
-.footer .nav__list > li {
+.nav__list > li {
     display: block;
 
     color: #2d2829;
 
     font-family: "Circe";
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .footer__logo {

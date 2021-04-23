@@ -26,7 +26,7 @@
 .how-to-order__instruction {
     z-index: 2;
 
-    margin-top: -230px;
+    margin-top: -222px;
     margin-left: 816px;
 
     color: #ffffff;
@@ -40,7 +40,7 @@
 }
 
 .instruction__order {
-    margin-top: 17px;
+    margin-top: 22px;
 
     counter-reset: item;
 }
@@ -50,7 +50,6 @@
     flex-direction: row;
 
     width: 490px;
-    min-height: 122px;
     margin-bottom: 14px;
 
     align-items: flex-start;
