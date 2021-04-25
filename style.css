@@ -48,16 +48,24 @@
     font-weight: normal;
     font-style: normal;
 
-    src: local("Intro Script H2 Base"), url("./assets/fonts/IntroScriptB-Base.woff") format("woff");
+    src: local("Intro Script H2 Base"), url("./assets/fonts/IntroScriptR-H2Base.woff") format("woff");
 }
 
-body {
-    max-width: 1366px;
-    margin: 0 auto;
+@media (min-width:768px) {
+    body {
+        max-width: 768px;
+        margin: 0 auto;
 
-    background-color: #fbebea;
+        background-color: #fbebea;
 
-    align-content: center;
+        align-content: center;
+    }
+}
+
+@media (min-width:1366px) {
+    body {
+        max-width: 1366px;
+    }
 }
 
 a {
@@ -75,15 +83,6 @@ a:hover {
 ol,
 ul {
     list-style: none;
-}
-
-.container {
-    display: flex;
-
-    width: 1220px;
-    margin: 56px auto;
-
-    align-items: baseline;
 }
 
 button {
