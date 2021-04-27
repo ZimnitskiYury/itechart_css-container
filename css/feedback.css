@@ -3,8 +3,15 @@
     flex-direction: column;
 
     width: 1220px;
-    height: 760px;
-    margin: 64px auto 0 auto;
+    height: 781px;
+    padding: 64px 73px 0 73px;
+
+    background-image: url("../assets/img/contacts-cake.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 886px auto;
+
+    mix-blend-mode: multiply;
 }
 
 .contacts__title {
@@ -56,6 +63,32 @@
 
     font-family: Circe;
     font-size: 14px;
+}
+
+@media (max-width:1365px) {
+    .contacts {
+        width: 768px;
+        height: 589px;
+        margin: 0;
+
+        background-image: url("../assets/img/contacts-cake-tablet.png");
+        background-size: 458px auto;
+    }
+    .contacts__title {
+        color: #2d2829;
+
+        font-family: "Playfair Display Bold";
+        font-size: 27.94px;
+        line-height: 38.71px;
+    }
+    .contacts__annotation {
+        margin-top: 0;
+
+        color: #32313d;
+
+        font-family: "Intro Script Base";
+        font-size: 21.95px;
+    }
 }
 
 .feedback-form__button {
