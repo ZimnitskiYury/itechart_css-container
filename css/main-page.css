@@ -116,3 +116,26 @@
 
     align-self: center;
 }
+
+@media (max-width: 1365px) {
+    .main-page {
+        width: 100%;
+        height: 700px;
+        margin: 0;
+
+        align-items: center;
+    }
+    .main-page__left-info {
+        margin-top: 110px;
+        margin-left: 45px;
+    }
+    .main-page__title {
+        letter-spacing: 4.5px;
+
+        color: #2e2829;
+
+        font-family: "Playfair Display Bold";
+        font-size: 60px;
+        line-height: 55px;
+    }
+}

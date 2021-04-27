@@ -66,6 +66,8 @@
         align-items: center;
     }
     .header__burger {
+        display: block;
+
         margin-left: 16px;
     }
     .header__nav {
