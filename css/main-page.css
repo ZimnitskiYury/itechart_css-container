@@ -138,4 +138,11 @@
         font-size: 60px;
         line-height: 55px;
     }
+    .main-page__cake {
+        overflow: hidden;
+
+        width: 549px;
+        height: 548px;
+        margin-top: 1px;
+    }
 }
