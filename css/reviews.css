@@ -7,6 +7,12 @@
     align-items: center;
 }
 
+@media (max-width:1365px) {
+    .reviews {
+        width: 768px;
+    }
+}
+
 .reviews__header {
     display: flex;
     overflow: hidden;

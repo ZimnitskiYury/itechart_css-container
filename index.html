@@ -42,17 +42,11 @@
                 </li>
             </ul>
         </div>
-        <div class="main-page__decoration">
-            <img class="main-page__decor-berry-1" src="./assets/img/berry-1.png" alt="berry-1" />
-            <img class="main-page__decor-berry-3" src="./assets/img/berry-3.png" alt="berry-3" />
-            <img class="main-page__decor-berry-2" src="./assets/img/berry-2.png" alt="berry-2" />
-            <img class="main-page__cake" src="./assets/img/main-page-cake.png" />
-        </div>
     </section>
     <section class="categories" id="categories">
         <h2 class="categories__title">Наши торты</h2>
-        <div class="categories__container">
-            <div class="categories__big-tile">
+        <ul class="categories__container">
+            <li>
                 <a href="/next" class="categories__name">Классические</a>
                 <h4 class="categories__count">24 вида</h4>
                 <img class="categories__image" src="./assets/img/category-classic.png" alt="category-classic">
@@ -60,44 +54,42 @@
                     <a href="/next">Смотреть</a>
                     <a href="/next"><img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
-            </div>
-            <div class="categories__small-tile-container">
-                <div class="categories__small-tile">
-                    <a href="/next" class="categories__name">Муссовые</a>
-                    <h4 class="categories__count">12 видов</h4>
-                    <img class="categories__image" src="./assets/img/category-muss.png" alt="category-muss">
-                    <div class="categories__more">
-                        <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
-                    </div>
+            </li>
+            <li>
+                <a href="/next" class="categories__name">Муссовые</a>
+                <h4 class="categories__count">12 видов</h4>
+                <img class="categories__image" src="./assets/img/category-muss.png" alt="category-muss">
+                <div class="categories__more">
+                    <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
-                <div class="categories__small-tile">
-                    <a href="/next" class="categories__name">Свадебные</a>
-                    <h4 class="categories__count">20 видов</h4>
-                    <img class="categories__image" src="./assets/img/category-wedding.png" alt="category-wedding">
-                    <div class="categories__more">
-                        <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
-                    </div>
+            </li>
+            <li>
+                <a href="/next" class="categories__name">Свадебные</a>
+                <h4 class="categories__count">20 видов</h4>
+                <img class="categories__image" src="./assets/img/category-wedding.png" alt="category-wedding">
+                <div class="categories__more">
+                    <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
-            </div>
-            <div class="categories__small-tile-container">
-                <div class="categories__small-tile">
-                    <a href="/next" class="categories__name">Мужчинам</a>
-                    <h4 class="categories__count">24 вида</h4>
-                    <img class="categories__image" src="./assets/img/category-mens.png" alt="category-mens">
-                    <div class="categories__more">
-                        <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
-                    </div>
+            </li>
+
+            <li>
+                <a href="/next" class="categories__name">Мужчинам</a>
+                <h4 class="categories__count">24 вида</h4>
+                <img class="categories__image" src="./assets/img/category-mens.png" alt="category-mens">
+                <div class="categories__more">
+                    <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
-                <div class="categories__small-tile">
-                    <a href="/next" class="categories__name">Женщинам</a>
-                    <h4 class="categories__count">16 видов</h4>
-                    <img class="categories__image" src="./assets/img/category-women.png" alt="category-women">
-                    <div class="categories__more">
-                        <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
-                    </div>
+            </li>
+            <li>
+                <a href="/next" class="categories__name">Женщинам</a>
+                <h4 class="categories__count">16 видов</h4>
+                <img class="categories__image" src="./assets/img/category-women.png" alt="category-women">
+                <div class="categories__more">
+                    <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
-            </div>
-            <div class="categories__big-tile">
+            </li>
+
+            <li>
                 <a href="/next" class="categories__name">Детские</a>
                 <h4 class="categories__count">18 видов</h4>
                 <img class="categories__image" src="./assets/img/category-children.png" alt="category-children">
@@ -105,8 +97,9 @@
                     <a href="/next">Смотреть</a>
                     <a href="/next"> <img src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
-            </div>
-        </div>
+            </li>
+        </ul>
+
     </section>
     <section class="individual-order" id="individual-order">
         <div class="individual-order__header">
@@ -253,35 +246,26 @@
             <h3>Почему нас выбирают ?</h3>
         </div>
         <div class="our-advantages__natural-product">
-            <img class="our-advantages__dish" src="./assets/img/advantages-natural.png" alt="dish">
-            <img class="our-advantages__leaf" src="./assets/img/leaf.png" alt="leaf">
-            <div class="natural-product">
-                <img src="./assets/img/natural-prod.png" alt="natural-product">
-                <ul class="natural-product_annotatiton">
-                    <li>
-                        <h4>Без искусственных добавок
-                        </h4>
-                        <p>Работаем с натуральными ингредиентами и свежими продуктами
-                        </p>
-                    </li>
-                    <li>
-                        <h4>Свежий торт в день торжества
-                        </h4>
-                        <p>Торты изготавливаются в течение суток до отправки</p>
-                    </li>
-                </ul>
-            </div>
+            <img src="./assets/img/natural-prod.png" alt="natural-product">
+            <ul class="natural-product_annotatiton">
+                <li>
+                    <h4>Без искусственных добавок
+                    </h4>
+                    <p>Работаем с натуральными ингредиентами и свежими продуктами
+                    </p>
+                </li>
+                <li>
+                    <h4>Свежий торт в день торжества
+                    </h4>
+                    <p>Торты изготавливаются в течение суток до отправки</p>
+                </li>
+            </ul>
         </div>
-        <img class="our-advantages__leaf2" src="./assets/img/care-berry.png" alt="care-berry">
         <div class="our-advantages__care">
             <div class="care">
                 <h2>Забота о клиентах</h2>
                 <h3>Для нас важно</h3>
                 <p>Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
-            </div>
-            <div class="care__images">
-                <img class="care__images__dish" src="./assets/img/care-cake.png" alt="care-cake">
-                <img class="care__images__effects" src="./assets/img/care-effects.png" alt="effects">
             </div>
         </div>
     </section>

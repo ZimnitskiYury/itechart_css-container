@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+@media (max-width:1365px) {
+    .individual-order {
+        width: 768px;
+    }
+}
+
 .individual-order__header {
     display: flex;
     flex-direction: column;

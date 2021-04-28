@@ -9,6 +9,12 @@
     justify-content: center;
 }
 
+@media (max-width:1365px) {
+    .our-comment {
+        width: 768px;
+    }
+}
+
 .our-comment__title {
     display: block;
 

@@ -50,6 +50,7 @@
 
     src: local("Intro Script H2 Base"), url("./assets/fonts/IntroScriptR-H2Base.woff") format("woff");
 }
+
 body {
     max-width: 1366px;
     margin: 0 auto;
