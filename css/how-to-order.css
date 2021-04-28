@@ -1,33 +1,18 @@
 .how-to-order {
     display: flex;
-    overflow: hidden;
-    flex-direction: column;
+    flex-direction: row;
 
     height: 703px;
-}
+    padding: 0 73px;
 
-.how-to-order__background {
-    position: relative;
-    z-index: 0;
+    background-image: url("../assets/img/order-background.png");
+    background-repeat: no-repeat;
 
-    margin-left: -69px;
-}
-
-.how-to-order__decor {
-    position: relative;
-    z-index: 1;
-
-    margin-top: -487px;
-    margin-left: -355px;
-
-    align-self: center;
+    justify-content: flex-end;
 }
 
 .how-to-order__instruction {
-    z-index: 2;
-
-    margin-top: -222px;
-    margin-left: 816px;
+    margin-top: 121px;
 
     color: #ffffff;
 
@@ -49,7 +34,7 @@
     display: flex;
     flex-direction: row;
 
-    width: 490px;
+    width: 500px;
     margin-bottom: 14px;
 
     align-items: flex-start;
@@ -58,17 +43,16 @@
 .instruction__order > li:before {
     display: block;
 
-    min-width: 33.64px;
+    min-width: 58px;
 
     content: counter(item) "";
     counter-increment: item;
-    text-align: right;
+    text-align: center;
 
     color: #ffffff;
 
     font-family: "Playfair Display Bold";
     font-size: 64.25px;
-    line-height: 64.25px;
 }
 
 .order {
@@ -76,7 +60,6 @@
     flex-direction: column;
 
     margin-top: 19px;
-    margin-left: 17px;
 }
 
 .order__title {
@@ -95,4 +78,51 @@
     font-family: "Circe";
     font-size: 20px;
     line-height: 24px;
+}
+
+@media (max-width:1365px) {
+    .how-to-order {
+        height: 420px;
+
+        background-image: url("../assets/img/order-background-tablet.png");
+    }
+    .how-to-order__instruction {
+        margin-top: 54px;
+
+        font-size: 28px;
+    }
+    .instruction__order {
+        margin-top: 22px;
+    }
+    .instruction__order > li {
+        width: 375px;
+        margin-bottom: 14px;
+    }
+    .instruction__order > li:before {
+        min-width: 30px;
+
+        text-align: left;
+
+        font-size: 36px;
+    }
+    .order {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 6px;
+    }
+    .order__title {
+        letter-spacing: 0.15px;
+
+        font-size: 15px;
+    }
+    .order__annotation {
+        margin-top: 0;
+
+        letter-spacing: 0;
+
+        font-family: "Circe";
+        font-size: 14px;
+        line-height: 1.2;
+    }
 }

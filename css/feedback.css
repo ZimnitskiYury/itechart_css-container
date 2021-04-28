@@ -65,39 +65,13 @@
     font-size: 14px;
 }
 
-@media (max-width:1365px) {
-    .contacts {
-        width: 768px;
-        height: 589px;
-        margin: 0;
-
-        background-image: url("../assets/img/contacts-cake-tablet.png");
-        background-size: 458px auto;
-    }
-    .contacts__title {
-        color: #2d2829;
-
-        font-family: "Playfair Display Bold";
-        font-size: 27.94px;
-        line-height: 38.71px;
-    }
-    .contacts__annotation {
-        margin-top: 0;
-
-        color: #32313d;
-
-        font-family: "Intro Script Base";
-        font-size: 21.95px;
-    }
-}
-
 .feedback-form__button {
     width: 180px;
     margin-top: 74px;
 }
 
 .feedback__contacts {
-    width: 519px;
+    width: 344px;
     margin-top: 16px;
     margin-left: 82px;
 
@@ -118,18 +92,65 @@
     justify-content: space-between;
 }
 
-.feedback__image {
-    position: relative;
+@media (max-width:1365px) {
+    .contacts {
+        width: 672px;
+        height: 541px;
+        padding: 48px 48px 0 48px;
 
-    width: 886px;
-    margin-top: 24px;
-    margin-left: -425px;
+        background-image: url("../assets/img/contacts-cake-tablet.png");
+        background-size: 458px auto;
 
-    align-self: center;
-    mix-blend-mode: multiply;
-}
+        mix-blend-mode: multiply;
+    }
+    .contacts__title {
+        color: #2d2829;
 
-.feedback__image > img {
-    width: 886px;
-    height: 636px;
+        font-family: "Playfair Display Bold";
+        font-size: 27.94px;
+        line-height: 38.71px;
+    }
+    .contacts__annotation {
+        margin-top: 0;
+
+        color: #32313d;
+
+        font-family: "Intro Script Base";
+        font-size: 21.95px;
+    }
+    .feedback__form p {
+        margin-top: 19px;
+
+        color: #000000;
+
+        font-family: "Circe";
+        font-size: 14px;
+        line-height: 14.12px;
+    }
+    .feedback-form__input {
+        width: 347px;
+        height: 51px;
+        margin-top: 9px;
+        padding: 0;
+
+        transition: unset;
+
+        background: white;
+
+        font-family: Circe;
+        font-size: 14px;
+    }
+    .feedback-form__button {
+        width: 160px;
+        margin-top: 31px;
+    }
+    .feedback__contacts {
+        width: 244px;
+        margin-top: 16px;
+        margin-left: 66px;
+
+        font-family: Circe;
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
