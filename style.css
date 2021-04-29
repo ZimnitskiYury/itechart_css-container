@@ -51,6 +51,16 @@
     src: local("Intro Script H2 Base"), url("./assets/fonts/IntroScriptR-H2Base.woff") format("woff");
 }
 
+html {
+    background-color: lightgray;
+}
+
+@media (max-width:1365px) {
+    html {
+        max-width: 768px;
+    }
+}
+
 body {
     max-width: 1366px;
     margin: 0 auto;
@@ -96,6 +106,15 @@ button {
 
     font-family: "Circe Regular";
     font-size: 13px;
+}
+
+@media (max-width:1365px) {
+    button {
+        width: 100%;
+        height: 44px;
+
+        font-size: 10px;
+    }
 }
 
 button:hover {
