@@ -9,6 +9,8 @@
 
 @media (max-width:1365px) {
     .reviews {
+        display: none;
+
         width: 768px;
     }
 }

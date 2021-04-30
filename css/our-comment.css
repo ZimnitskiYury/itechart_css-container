@@ -11,6 +11,8 @@
 
 @media (max-width:1365px) {
     .our-comment {
+        display: none;
+
         width: 768px;
     }
 }

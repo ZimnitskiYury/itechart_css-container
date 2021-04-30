@@ -13,6 +13,8 @@
 
 @media (max-width:1365px) {
     .our-advantages {
+        display: none;
+
         height: 727px;
 
         background-image: url("../assets/img/care-advantages-background-tablet.png");

@@ -7,6 +7,12 @@
     margin: 180px auto 0 auto;
 }
 
+@media (max-width:1365px) {
+    .about-us {
+        display: none;
+    }
+}
+
 .about-us__persone {
     width: 508px;
     height: 508px;
