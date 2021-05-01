@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
 
-    height: 460px;
-    margin-top: 26px;
+    height: auto;
+    margin-top: 112px;
+    margin-bottom: 120px;
 
     align-items: center;
     justify-content: center;
@@ -18,34 +19,31 @@
 .our-comment__title {
     display: block;
 
-    margin-top: 8px;
-
     color: #fffefe;
 
     font-family: "Playfair Display Bold";
     font-size: 140px;
-    line-height: 50px;
+    line-height: 60px;
 }
 
 .our-comment__annotation {
     display: block;
 
-    width: 815px;
-    margin-top: 6px;
+    width: 814px;
+    margin-bottom: 46px;
 
     text-align: center;
 
     color: #2d2829;
 
     font-family: "Playfair Display Bold Italic";
-    font-size: 14px;
+    font-size: 25px;
     line-height: 1.485;
 }
 
 .our-comment__autograph {
     width: 149px;
     height: 73px;
-    margin-top: 44px;
 }
 
 @media (max-width:1365px) {
@@ -56,7 +54,6 @@
         display: block;
 
         width: 448px;
-        margin-top: 6px;
 
         text-align: center;
 
@@ -69,6 +66,5 @@
     .our-comment__autograph {
         width: 82px;
         height: 40px;
-        margin-top: 44px;
     }
 }

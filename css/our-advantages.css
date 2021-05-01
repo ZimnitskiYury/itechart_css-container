@@ -11,18 +11,10 @@
     align-items: center;
 }
 
-@media (max-width:1365px) {
-    .our-advantages {
-        display: none;
-
-        height: 727px;
-
-        background-image: url("../assets/img/care-advantages-background-tablet.png");
-    }
-}
-
 .our-advantages__title {
     display: block;
+
+    margin-bottom: 20px;
 
     letter-spacing: 0.4px;
 
@@ -38,8 +30,6 @@
 .our-advantages__annotation {
     display: block;
 
-    margin-top: 20px;
-
     color: #32313d;
 
     font-family: "Intro Script Base";
@@ -48,38 +38,51 @@
     align-self: center;
 }
 
-.our-advantages__natural-product {
+.our-advantages__list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    margin-top: 12px;
+    width: 596px;
+    height: 490px;
+    margin-right: 150px;
 
-    justify-content: flex-start;
+    align-self: flex-end;
+    justify-content: center;
 }
 
-.our-advantages__natural-product > img {
-    width: 61px;
-    height: 61px;
-    margin-top: 50px;
+.our-advantages__list > li {
+    display: flex;
+    flex-direction: column;
+
+    width: 520px;
+    height: 92px;
+    margin-bottom: 20px;
+
+    flex-wrap: wrap;
+}
+
+.our-advantages__list > li img {
+    width: 60px;
+    margin-top: 10px;
     margin-right: 20px;
-    margin-left: -20px;
 }
 
-.natural-product_annotatiton > li {
-    display: block;
+.our-advantages__advantage {
+    display: flex;
+    flex-direction: column;
 
-    max-width: 380px;
-    margin: 35px 0;
+    width: 460px;
+    height: 92px;
 }
 
-.natural-product_annotatiton h4 {
+.our-advantages__advantage-title {
+    margin-bottom: 5px;
+
     font-family: "Circe Bold";
     font-size: 20px;
 }
 
-.natural-product_annotatiton p {
-    margin-top: 6px;
-
+.our-advantages__advantage-annotation {
     letter-spacing: 0;
 
     font-family: "Circe";
@@ -89,19 +92,20 @@
 
 .our-advantages__care {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    width: 445px;
+    height: 636px;
+    padding-left: 73px;
 
     align-self: flex-start;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.care {
-    width: 445px;
-    margin-top: 150px;
-}
-
-.care h2 {
+.our-advantages__care-title {
     display: block;
+
+    margin-bottom: 12px;
 
     letter-spacing: 0.4px;
 
@@ -110,29 +114,106 @@
     font-family: "Playfair Display Bold";
     font-size: 40px;
     line-height: 66px;
-
-    align-self: center;
 }
 
-.care h3 {
+.our-advantages__care-annotation {
     display: block;
 
-    margin-top: 6px;
+    margin-bottom: 10px;
 
     color: #32313d;
 
     font-family: "Intro Script Base";
     font-size: 35px;
-
-    align-self: center;
 }
 
-.care p {
-    margin-top: 7px;
-
+.our-advantages__care-content {
     letter-spacing: 0;
 
     font-family: "Circe";
     font-size: 20px;
     line-height: 24px;
+}
+
+@media (max-width:1365px) {
+    .our-advantages {
+        height: 727px;
+
+        background-image: url("../assets/img/care-advantages-background-tablet.png");
+    }
+    .our-advantages__title {
+        font-size: 28px;
+        line-height: 18.5px;
+    }
+    .our-advantages__annotation {
+        font-size: 26px;
+    }
+    .our-advantages__list {
+        display: flex;
+        flex-direction: column;
+
+        width: 356px;
+        height: 270px;
+        margin-right: 50px;
+
+        align-self: flex-end;
+        justify-content: center;
+    }
+    .our-advantages__list > li {
+        display: flex;
+        flex-direction: column;
+
+        width: 345px;
+        height: 72px;
+        margin-bottom: 10px;
+
+        flex-wrap: wrap;
+    }
+    .our-advantages__advantage {
+        display: flex;
+        flex-direction: column;
+
+        width: 265px;
+        height: 92px;
+    }
+    .our-advantages__advantage-title {
+        font-size: 15px;
+    }
+    .our-advantages__advantage-annotation {
+        font-size: 14px;
+        line-height: auto;
+    }
+    .our-advantages__care {
+        width: 338px;
+        height: 340px;
+        padding-left: 20px;
+    }
+    .our-advantages__care-title {
+        margin-bottom: 12px;
+
+        letter-spacing: 0.4px;
+
+        color: #2d2829;
+
+        font-family: "Playfair Display Bold";
+        font-size: 28px;
+        line-height: 19px;
+    }
+    .our-advantages__care-annotation {
+        display: block;
+
+        margin-bottom: 10px;
+
+        color: #32313d;
+
+        font-family: "Intro Script Base";
+        font-size: 26px;
+    }
+    .our-advantages__care-content {
+        letter-spacing: 0;
+
+        font-family: "Circe";
+        font-size: 14px;
+        line-height: auto;
+    }
 }
