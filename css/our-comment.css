@@ -11,8 +11,6 @@
 
 @media (max-width:1365px) {
     .our-comment {
-        display: none;
-
         width: 768px;
     }
 }
@@ -40,12 +38,37 @@
     color: #2d2829;
 
     font-family: "Playfair Display Bold Italic";
-    font-size: 25px;
-    line-height: 37.8px;
+    font-size: 14px;
+    line-height: 1.485;
 }
 
 .our-comment__autograph {
     width: 149px;
     height: 73px;
     margin-top: 44px;
+}
+
+@media (max-width:1365px) {
+    .our-comment__title {
+        font-size: 77px;
+    }
+    .our-comment__annotation {
+        display: block;
+
+        width: 448px;
+        margin-top: 6px;
+
+        text-align: center;
+
+        color: #2d2829;
+
+        font-family: "Playfair Display Bold Italic";
+        font-size: 14px;
+        line-height: 1.485;
+    }
+    .our-comment__autograph {
+        width: 82px;
+        height: 40px;
+        margin-top: 44px;
+    }
 }
