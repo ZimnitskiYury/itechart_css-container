@@ -15,6 +15,14 @@
     }
 }
 
+@media (max-width:767px) {
+    .reviews {
+        display: none;
+
+        width: 100%;
+    }
+}
+
 .reviews__header {
     display: flex;
     overflow: hidden;

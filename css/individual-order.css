@@ -16,6 +16,16 @@
     }
 }
 
+@media (max-width:767px) {
+    .individual-order {
+        display: none;
+
+        width: 87%;
+        height: 1791px;
+        padding: 0 6.25%;
+    }
+}
+
 .individual-order__header {
     display: flex;
     flex-direction: column;
@@ -23,9 +33,6 @@
     margin-bottom: 48px;
 
     align-items: center;
-}
-
-@media (max-width:1365px) {
 }
 
 .individual-order__title {
@@ -38,14 +45,6 @@
     line-height: 66px;
 }
 
-@media (max-width:1365px) {
-    .individual-order__title {
-        letter-spacing: 0.28px;
-
-        font-size: 28px;
-    }
-}
-
 .individual-order__annotation {
     margin-top: 5px;
 
@@ -56,8 +55,34 @@
 }
 
 @media (max-width:1365px) {
+    .individual-order__title {
+        letter-spacing: 0.28px;
+
+        font-size: 28px;
+    }
     .individual-order__annotation {
         font-size: 26px;
+    }
+}
+
+@media (max-width:767px) {
+    .individual-order__header {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 0;
+
+        align-items: center;
+    }
+    .individual-order__title {
+        text-align: center;
+        letter-spacing: 0.24px;
+
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .individual-order__annotation {
+        font-size: 22px;
     }
 }
 
@@ -240,8 +265,78 @@
     }
 }
 
+@media (max-width:767px) {
+    .individual-order__steps {
+        width: 100%;
+        padding: 0;
+
+        counter-reset: item;
+    }
+    .individual-order__steps > li {
+        flex-direction: row;
+
+        width: 85.72%;
+        height: 430px;
+        margin-bottom: 10px;
+        padding: 3.57% 7.14%;
+
+        background-color: #fffefe;
+        box-shadow: 0 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
+
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .individual-order__steps > li:before {
+        width: 15%;
+
+        letter-spacing: 0.3px;
+
+        color: #f50049;
+
+        font-family: "Playfair Display Bold";
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .individual-order__steps > li:last-child {
+        display: flex;
+        flex-direction: column;
+
+        width: 682px;
+        height: 440px;
+        margin: 0;
+        padding-right: 0;
+
+        background-color: #fffefe;
+
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .individual-order__step-header {
+        width: 85%;
+        padding-top: 0;
+
+        letter-spacing: 0.16px;
+
+        font-size: 16px;
+        line-height: 18.24px;
+    }
+    .individual-order__left-arrow {
+        display: none;
+    }
+    .individual-order__right-arrow {
+        display: none;
+    }
+}
+
 .individual-order__left-arrow {
     padding-top: 24px;
+
+    align-self: center;
+}
+
+.individual-order__right-arrow {
+    padding-top: 0;
 
     align-self: center;
 }
@@ -306,6 +401,55 @@
     }
 }
 
+@media (max-width: 767px) {
+    .individual-order__step-one-content {
+        flex-direction: column;
+
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+        padding-left: 0;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .individual-order__cake-filling-image {
+        overflow: hidden;
+
+        width: 100%;
+        height: 113px;
+        margin-right: 0;
+    }
+    .individual-order__cake-filling-image > img {
+        width: 100%;
+        margin-top: -50px;
+    }
+    .individual-order__cake-filling {
+        display: flex;
+        flex-direction: column;
+
+        width: 185px;
+        height: 200px;
+        padding-top: 0;
+        padding-left: 0;
+
+        align-items: center;
+    }
+    .individual-order__cake-filling-header {
+        letter-spacing: 0.16px;
+
+        font-size: 16px;
+    }
+    .individual-order__cake-filling-select {
+        width: 179px;
+    }
+    .individual-order__cake-filling-count {
+        padding-left: 0;
+
+        font-size: 11px;
+    }
+}
+
 .individual-order__size {
     display: flex;
     flex-direction: row;
@@ -319,6 +463,14 @@
 @media (max-width:1365px) {
     .individual-order__size {
         width: 600px;
+
+        align-self: center;
+    }
+}
+
+@media (max-width:767px) {
+    .individual-order__size {
+        width: 100%;
 
         align-self: center;
     }

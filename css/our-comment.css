@@ -16,6 +16,13 @@
     }
 }
 
+@media (max-width:767px) {
+    .our-comment {
+        width: 87%;
+        padding: 0 6.25%;
+    }
+}
+
 .our-comment__title {
     display: block;
 
@@ -66,5 +73,22 @@
     .our-comment__autograph {
         width: 82px;
         height: 40px;
+    }
+}
+
+@media (max-width:1365px) {
+    .our-comment__title {
+        font-size: 60px;
+    }
+    .our-comment__annotation {
+        width: 100%;
+        margin-bottom: 20px;
+
+        font-size: 13px;
+        line-height: 1.20;
+    }
+    .our-comment__autograph {
+        width: 64px;
+        height: 31px;
     }
 }
