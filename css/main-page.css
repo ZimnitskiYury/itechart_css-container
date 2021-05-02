@@ -46,10 +46,6 @@
     margin-top: 62px;
 }
 
-.main-page__promo {
-    margin-top: 60px;
-}
-
 .main-page__list {
     display: flex;
     flex-direction: row;
@@ -69,7 +65,7 @@
     justify-content: space-between;
 }
 
-.main-page__list > li h6 {
+.main-page__list > li p {
     display: block;
 
     margin-left: 12px;
@@ -77,46 +73,6 @@
     font-family: "Circe";
     font-size: 14px;
     line-height: 18px;
-
-    align-self: center;
-}
-
-.main-page__decoration {
-    display: flex;
-    flex-direction: row;
-
-    width: 100%;
-    height: 100%;
-
-    align-self: center;
-}
-
-.main-page__cake {
-    overflow: hidden;
-
-    width: 769px;
-    height: 941px;
-    margin-top: 1px;
-    margin-left: -101px;
-}
-
-.main-page__decor-berry-1 {
-    margin-top: -78px;
-    margin-left: -182px;
-
-    align-self: center;
-}
-
-.main-page__decor-berry-2 {
-    width: 161px;
-    height: 162px;
-    margin-top: 6px;
-    margin-left: -50px;
-}
-
-.main-page__decor-berry-3 {
-    margin-top: -446px;
-    margin-left: -16px;
 
     align-self: center;
 }
@@ -144,11 +100,80 @@
         font-size: 60px;
         line-height: 55px;
     }
-    .main-page__cake {
-        overflow: hidden;
+}
 
-        width: 549px;
-        height: 548px;
-        margin-top: 1px;
+@media (max-width: 767px) {
+    .main-page {
+        flex-direction: column;
+
+        width: 87%;
+        height: 465px;
+        padding: 0 6.25%;
+
+        background-image: url("../assets/img/main-background-mobile.png");
+        background-position: top;
+
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .main-page__left-info {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .main-page__title {
+        margin-bottom: 20px;
+
+        text-align: center;
+        letter-spacing: 3px;
+
+        color: #2e2829;
+
+        font-family: "Playfair Display Bold";
+        font-size: 40px;
+        line-height: 0.9;
+    }
+    .main-page__annotation {
+        margin-top: 0;
+        margin-bottom: 18px;
+
+        color: #32313d;
+
+        font-family: "Intro Script Base";
+        font-size: 22px;
+    }
+    .main-page__list {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 40px;
+
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .main-page__list > li {
+        display: flex;
+        flex-direction: row;
+
+        width: 100%;
+        height: 41px;
+
+        align-content: center;
+        justify-content: flex-start;
+    }
+    .main-page__list > li img {
+        width: 33px;
+        height: 33px;
+    }
+    .main-page__button {
+        width: 226px;
+        margin-top: 0;
+
+        order: 4;
     }
 }

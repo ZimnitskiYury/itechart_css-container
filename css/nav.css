@@ -92,3 +92,38 @@
         margin-left: auto;
     }
 }
+
+@media (max-width: 767px) {
+    .header {
+        width: 280px;
+        height: 40px;
+        padding: 0 20px;
+
+        background-color: #ffffff;
+
+        align-items: center;
+    }
+    .header__burger {
+        display: block;
+
+        margin-left: 0;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__logo {
+        margin-right: 206px;
+        margin-left: 0;
+    }
+    .header__logo-link {
+        letter-spacing: 0.8px;
+
+        font-size: 16px;
+    }
+    .header__phone {
+        display: none;
+
+        margin-right: 45px;
+        margin-left: auto;
+    }
+}

@@ -63,6 +63,12 @@ html {
     }
 }
 
+@media (max-width:767px) {
+    html {
+        max-width: 320px;
+    }
+}
+
 body {
     max-width: 1366px;
     margin: 0 auto;
@@ -73,6 +79,12 @@ body {
 @media (max-width:1365px) {
     body {
         max-width: 768px;
+    }
+}
+
+@media (max-width:767px) {
+    body {
+        max-width: 320px;
     }
 }
 
