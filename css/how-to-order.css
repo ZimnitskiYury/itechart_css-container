@@ -126,3 +126,55 @@
         line-height: 1.2;
     }
 }
+
+@media (max-width:767px) {
+    .how-to-order {
+        width: 87%;
+        height: 482px;
+        padding: 0 6.25%;
+
+        background-image: url("../assets/img/order-background-mobile.png");
+    }
+    .how-to-order__instruction {
+        margin-top: 54px;
+
+        font-size: 24px;
+    }
+    .instruction__order {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 0;
+    }
+    .instruction__order > li {
+        width: auto;
+        margin-bottom: 14px;
+    }
+    .instruction__order > li:before {
+        min-width: 30px;
+
+        text-align: left;
+
+        font-size: 35px;
+    }
+    .order {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 6px;
+    }
+    .order__title {
+        letter-spacing: 0.15px;
+
+        font-size: 15px;
+    }
+    .order__annotation {
+        margin-top: 0;
+
+        letter-spacing: 0;
+
+        font-family: "Circe";
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
