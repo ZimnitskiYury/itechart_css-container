@@ -59,33 +59,22 @@ html {
 
 @media (max-width:1365px) {
     html {
-        max-width: 768px;
+        max-width: 1365px;
     }
 }
 
 @media (max-width:767px) {
     html {
-        max-width: 320px;
+        min-width: 320px;
+        max-width: 767px;
     }
 }
 
 body {
-    max-width: 1366px;
+    max-width: 100%;
     margin: 0 auto;
 
     background-color: #fbebea;
-}
-
-@media (max-width:1365px) {
-    body {
-        max-width: 768px;
-    }
-}
-
-@media (max-width:767px) {
-    body {
-        max-width: 320px;
-    }
 }
 
 a {
