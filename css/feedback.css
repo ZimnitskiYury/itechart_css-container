@@ -154,3 +154,72 @@
         line-height: 24px;
     }
 }
+
+@media (max-width:767px) {
+    .contacts {
+        width: 87%;
+        height: 600px;
+        padding: 0 6.25%;
+
+        background-image: none;
+        background-size: 458px auto;
+
+        mix-blend-mode: multiply;
+    }
+    .contacts__title {
+        color: #2d2829;
+
+        font-family: "Playfair Display Bold";
+        font-size: 27.94px;
+        line-height: 38.71px;
+    }
+    .contacts__feedback {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts__annotation {
+        margin-top: 0;
+
+        color: #32313d;
+
+        font-family: "Intro Script Base";
+        font-size: 21.95px;
+    }
+    .feedback__form p {
+        margin-top: 19px;
+
+        color: #000000;
+
+        font-family: "Circe";
+        font-size: 14px;
+        line-height: 14.12px;
+    }
+    .feedback-form__input {
+        width: auto;
+        height: 51px;
+        margin-top: 9px;
+        padding: 0;
+
+        transition: unset;
+
+        background: white;
+
+        font-family: Circe;
+        font-size: 14px;
+    }
+    .feedback-form__button {
+        width: 160px;
+        margin-top: 0;
+    }
+    .feedback__contacts {
+        width: 244px;
+        margin-top: 0;
+        margin-left: 0;
+
+        font-family: Circe;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
