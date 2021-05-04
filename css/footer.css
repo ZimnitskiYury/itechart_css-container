@@ -95,6 +95,10 @@ footer {
     display: none;
 }
 
+.footer__credentials-mobile {
+    display: none;
+}
+
 @media (max-width: 1365px) {
     footer {
         width: 94.8%;
@@ -109,9 +113,6 @@ footer {
         margin-top: 0;
 
         align-items: flex-start;
-    }
-    .footer__logo {
-        margin-bottom: 24px;
     }
     .logo__text {
         letter-spacing: 0.9px;
