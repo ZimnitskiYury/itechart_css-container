@@ -49,8 +49,8 @@
     <!-- CATEGORIES IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <section class="categories" id="categories">
         <h2 class="categories__title">Наши торты</h2>
-        <ul class="categories__container">
 
+        <ul class="categories__container">
             <li class="categories__container-item">
                 <a href="/next" class="categories__name">Классические</a>
                 <h4 class="categories__count">24 вида</h4>
@@ -70,6 +70,7 @@
                     <a href="/next"> <img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
             </li>
+
             <li class="categories__container-item">
                 <a href="/next" class="categories__name">Свадебные</a>
                 <h4 class="categories__count">20 видов</h4>
@@ -79,6 +80,7 @@
                     <a href="/next"> <img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
             </li>
+
             <li class="categories__container-item">
                 <a href="/next" class="categories__name">Мужчинам</a>
                 <h4 class="categories__count">24 вида</h4>
@@ -88,6 +90,7 @@
                     <a href="/next"> <img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
             </li>
+
             <li class="categories__container-item">
                 <a href="/next" class="categories__name">Женщинам</a>
                 <h4 class="categories__count">16 видов</h4>
@@ -97,6 +100,7 @@
                     <a href="/next"> <img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
             </li>
+
             <li class="categories__container-item">
                 <a href="/next" class="categories__name">Детские</a>
                 <h4 class="categories__count">18 видов</h4>
@@ -106,8 +110,8 @@
                     <a href="/next"> <img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
                 </div>
             </li>
-
         </ul>
+
     </section>
 
     <!-- INDIVIDUAL ORDER WORKS ONLY IN DESTOP VERSION  -->
@@ -199,24 +203,40 @@
 
     <!-- REVIEWS WORKS ONLY IN DESTOP VERSION  -->
     <section class="reviews" id="reviews">
-        <div class="reviews__header">
-            <img class="reviews__header-decor-left" src="./assets/img/reviews-decor-left.png" alt="reviews-decor-left">
-            <h2 class="reviews__title">Отзывы</h2>
-            <img class="reviews__header-decor-right" src="./assets/img/reviews-decor-right.png" alt="reviews-decor-right">
-        </div>
+        <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__content">
-            <img class="reviews__content__left" src="./assets/img/Arrow-Left-Icon.png" alt="Arrow-Left-Icon">
-            <img src="./assets/img/reviews-persone.png" alt="reviews-persone">
-            <div class="reviews__dictum">
-                <h3>Мария</h3>
-                <h4>юрист, 33 года</h4>
-                <h5>Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) </h5>
-                <div class="reviews__dictum__more">
-                    <a href="/next">Развернуть</a>
-                    <h6>1/26</h6>
+            <a href="/next">
+                <div class="reviews__content__left">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="16px">
+                        <path fill-rule="evenodd"  fill="rgb(241, 125, 145)" d="M0.441,9.049 C0.155,8.766 -0.003,8.392 -0.003,7.990 C-0.003,7.590 0.155,7.214 0.441,6.931 L7.284,0.290 C7.680,-0.099 8.320,-0.099 8.715,0.290 C9.110,0.681 9.110,1.313 8.715,1.703 L2.228,7.990 L8.715,14.278 C9.110,14.667 9.110,15.299 8.715,15.690 C8.320,16.081 7.680,16.081 7.284,15.690 L0.441,9.049 L0.441,9.049 L0.441,9.049 Z"/>
+                    </svg>
+
                 </div>
-            </div>
-            <img class="reviews__content__right" src="./assets/img/Arrow-Right-Icon.png" alt="Arrow-Right-Icon">
+            </a>
+            <article class="dictum">
+                <div class="dictum__user-photo">
+                    <img src="./assets/img/reviews-persone.png" alt="reviews-persone">
+                </div>
+                <div class="dictum__content">
+                    <header class="dictum__header">
+                        <h1 class="dictum__user">Мария</h1>
+                        <h2 class="dictum__user-info">юрист, 33 года</h2>
+                    </header>
+                    <p class="dictum__annotation">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) </p>
+                    <a class="dictum__more" href="/next">Развернуть</a>
+                </div>
+            </article>
+            <span class="reviews__count">1/26</span>
+            <a href="/next">
+                <div class="reviews__content__right">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="16px">
+                            <path fill-rule="evenodd"  fill="rgb(241, 125, 145)" d="M8.561,9.049 C8.845,8.766 9.003,8.392 9.003,7.990 C9.003,7.590 8.845,7.214 8.561,6.931 L1.741,0.290 C1.347,-0.099 0.709,-0.099 0.315,0.290 C-0.078,0.681 -0.078,1.313 0.315,1.703 L6.779,7.990 L0.315,14.278 C-0.078,14.667 -0.078,15.299 0.315,15.690 C0.709,16.081 1.347,16.081 1.741,15.690 L8.561,9.049 L8.561,9.049 L8.561,9.049 Z"/>
+                    </svg>
+
+                </div>
+            </a>
         </div>
     </section>
 
