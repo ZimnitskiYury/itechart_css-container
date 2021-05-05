@@ -11,8 +11,10 @@
 
 @media (max-width:1365px) {
     .individual-order {
-        width: 728px;
-        padding: 0 20px;
+        display: none;
+
+        width: 94.8%;
+        padding: 0 2.6%;
     }
 }
 
@@ -211,7 +213,7 @@
 
 @media (max-width:1365px) {
     .individual-order__steps {
-        width: 728px;
+        width: 100%;
         padding: 0 20px;
 
         counter-reset: item;
