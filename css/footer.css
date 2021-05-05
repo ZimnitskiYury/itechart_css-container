@@ -149,7 +149,7 @@ footer {
         width: 100%;
     }
     .footer__credentials-line {
-        width: 638px;
+        width: 100%;
         margin-top: 30px;
 
         opacity: 0.1;

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/06f4c9154d.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 
@@ -263,7 +264,7 @@
     </section>
     <section class="how-to-order" id="how-to-order">
         <div class="how-to-order__instruction">
-            <p>Как заказать</p>
+            <p class="how-to-order__title">Как заказать</p>
             <ol class="instruction__order">
                 <li>
                     <div class="order">
@@ -286,30 +287,47 @@
             </ol>
         </div>
     </section>
+
+    <!-- CONTACTS IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <section class="contacts" id="contacts">
-        <div class="contacts__title">Контакты</div>
-        <div class="contacts__annotation">Остались вопросы?</div>
-        <div class="contacts__feedback">
-            <div class="feedback__form">
-                <form action="/action">
-                    <p>Заполните форму ниже и наш кондитер свяжется с Вами</p>
-                    <input type="text" class="feedback-form__input" placeholder="Ваше имя" name="name" id='name' required>
-                    <br>
-                    <input type="text" class="feedback-form__input" placeholder="Email адрес" name="email" id='email' required>
-                    <br>
-                    <input type="text" class="feedback-form__input" placeholder="Ваш вопрос" name="question" id='question' required>
-                    <div class="feedback-form__button">
-                        <button>Отправить</button>
-                    </div>
-                </form>
-            </div>
-            <div class="feedback__contacts">
-                <p>Или позвоните по телефону:<br>+7 906 899 92 96 <br> Наша почта : bakerybypavel@mail.ru <br> Мы в соц. сетях:</p>
-                <div class="feedback-contacts__socials">
-                    <a href="https://instagram.com"><img src="./assets/img/social_instagram_circle.png" alt="Наш инстаграм"></a>
-                    <a href="https://vk.com"><img src="./assets/img/social_vk_circle.png" alt="Наш Вк"></a>
+        <h2 class="contacts__title">Контакты</h2>
+        <span class="contacts__annotation">Остались вопросы?</span>
+        <div class="contacts__container">
+            <form class="feedback-form" action="/action">
+                <p class="feedback-form__title">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+                <input type="text" class="feedback-form__input" placeholder="Ваше имя" name="name" id='name' required>
+
+                <input type="text" class="feedback-form__input" placeholder="Email адрес" name="email" id='email' required>
+
+                <textarea class="feedback-form__input-question" placeholder="Ваш вопрос" name="question" id='question' required></textarea>
+                <div class="feedback-form__button">
+                    <button>Отправить</button>
                 </div>
-            </div>
+            </form>
+            <ul class="contact-info__list">
+                <li class="contact-info__list-item">
+                    <p class="contact-info__phone-headline"> Или позвоните по телефону:</p>
+                    <a class="contact-info__phone-link" href="tel:+79068999296"><i class="fas fa-phone-alt"></i> +7 906 899 92 96 </a>
+                </li>
+                <li class="contact-info__list-item">
+                    <p class="contact-info__email-headline"> Наша почта:</p>
+                    <a class="contact-info__email-link" href="mailto:bakerybypavel@mail.ru"><i class="fas fa-envelope-open-text"></i> bakerybypavel@mail.ru</a>
+                </li>
+                <li class="contact-info__list-item">
+                    <p class="contact-info__socials-headline">Мы в соц. сетях:</p>
+                    <div class="contact-info__socials-container">
+                        <a href="https://instagram.com">
+                            <div class="contact-info__socials-instagram">
+                            </div>
+                        </a>
+                        <a href="https://vk.com">
+                            <div class="contact-info__socials-vk">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 
