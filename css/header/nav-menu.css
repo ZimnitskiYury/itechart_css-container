@@ -1,0 +1,24 @@
+.nav-menu {
+    display: flex;
+
+    width: 746px;
+    margin-left: 44px;
+
+    justify-content: space-between;
+}
+
+.nav-menu__link {
+    letter-spacing: 0;
+    text-transform: uppercase;
+
+    color: #2d2829;
+
+    font-family: "Circe";
+    font-size: 13px;
+}
+
+@media (max-width:1365px) {
+    .nav-menu {
+        display: none;
+    }
+}

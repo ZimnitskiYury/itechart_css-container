@@ -1,3 +1,4 @@
+@import url("./nav-menu.css");
 .header {
     display: flex;
     flex-direction: row;
@@ -31,25 +32,6 @@
     display: none;
 }
 
-.header__nav {
-    display: flex;
-
-    width: 746px;
-    margin-left: 44px;
-
-    justify-content: space-between;
-}
-
-.header__nav-link {
-    letter-spacing: 0;
-    text-transform: uppercase;
-
-    color: #2d2829;
-
-    font-family: "Circe";
-    font-size: 13px;
-}
-
 .header__phone {
     margin-left: auto;
 
@@ -73,9 +55,6 @@
         display: block;
 
         margin-left: 16px;
-    }
-    .header__nav {
-        display: none;
     }
     .header__logo {
         margin-right: 10px;
@@ -108,9 +87,6 @@
         display: block;
 
         margin-left: auto;
-    }
-    .header__nav {
-        display: none;
     }
     .header__logo {
         margin-right: 0;
