@@ -56,6 +56,10 @@
 
         margin-left: 16px;
     }
+    .header__burger-ico {
+        width: 26px;
+        height: 18px;
+    }
     .header__logo {
         margin-right: 10px;
     }
@@ -86,6 +90,8 @@
     .header__burger {
         display: block;
 
+        width: 26px;
+        height: 18px;
         margin-left: auto;
     }
     .header__logo {

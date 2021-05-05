@@ -1,11 +1,14 @@
+@import url("./pros.css");
 .main-page {
     display: flex;
     flex-direction: column;
 
+    width: auto;
     height: 941px;
     margin-top: 20px;
+    padding: 0 5.34%;
 
-    background-image: url("../assets/img/main-background.png");
+    background-image: url("../../assets/img/main-background.png");
     background-repeat: no-repeat;
     background-position: right;
 
@@ -41,42 +44,12 @@
     margin-bottom: 128px;
 }
 
-.main-page__list {
-    display: flex;
-    flex-direction: row;
-
-    width: 460px;
-
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-.main-page__list-item {
-    display: flex;
-    flex-direction: row;
-
-    align-content: center;
-    justify-content: space-between;
-}
-
-.main-page__list-item > p {
-    display: block;
-
-    margin-left: 12px;
-
-    font-family: "Circe";
-    font-size: 14px;
-    line-height: 18px;
-
-    align-self: center;
-}
-
 @media (max-width: 1365px) {
     .main-page {
         height: 700px;
         margin-top: 13px;
 
-        background-image: url("../assets/img/main-background-tablet.png");
+        background-image: url("../../assets/img/main-background-tablet.png");
         background-position: right top;
     }
     .main-page__title {
@@ -97,9 +70,6 @@
 
         font-size: 13px;
     }
-    .main-page__list {
-        width: 446px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -111,7 +81,7 @@
         margin-top: 0;
         padding: 0 6.25% 40px 6.25% !important;
 
-        background-image: url("../assets/img/main-background-mobile.png");
+        background-image: url("../../assets/img/main-background-mobile.png");
         background-position: top;
 
         align-items: center;
@@ -137,31 +107,6 @@
 
         font-family: "Intro Script Base";
         font-size: 22px;
-    }
-    .main-page__list {
-        display: flex;
-        flex-direction: column;
-
-        width: auto;
-        margin-top: 0;
-        margin-bottom: 36px;
-
-        align-items: baseline;
-        align-self: center;
-        justify-content: space-between;
-    }
-    .main-page__list-item {
-        display: flex;
-        flex-direction: row;
-
-        height: 45px;
-
-        align-items: center;
-        justify-content: flex-start;
-    }
-    .main-page__list > li img {
-        width: 33px;
-        height: 33px;
     }
     .main-page__button {
         width: 226px;
