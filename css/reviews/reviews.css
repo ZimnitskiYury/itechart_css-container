@@ -103,8 +103,35 @@
 
 @media (max-width:767px) {
     .reviews {
-        display: none;
+        width: 87.5%;
+        height: auto;
+        padding: 48px 6.25% 0 6.25%;
+
+        background-image: unset;
+
+        align-items: center;
+    }
+    .reviews__title {
+        font-size: 24px;
+        line-height: auto;
+    }
+    .reviews__content {
+        display: flex;
+        flex-direction: column;
 
         width: 100%;
+        height: auto;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .reviews__content__left {
+        display: none;
+    }
+    .reviews__content__right {
+        display: none;
+    }
+    .reviews__count {
+        align-self: flex-end;
     }
 }
