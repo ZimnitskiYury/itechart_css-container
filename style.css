@@ -4,8 +4,8 @@
 @import url("./css/header.css");
 @import url("./css/reviews.css");
 @import url("./css/about-us.css");
-@import url("./css/our-advantages.css");
-@import url("./css/our-comment.css");
+@import url("./css/our-advantages/our-advantages.css");
+@import url("./css/our-comment/our-comment.css");
 @import url("./css/order/order.css");
 @import url("./css/contacts/contacts.css");
 @import url("./css/footer/footer.css");

@@ -2,9 +2,11 @@
     display: flex;
     flex-direction: column;
 
+    width: 58.42%;
     height: auto;
     margin-top: 112px;
     margin-bottom: 120px;
+    padding: 0 20.79%;
 
     align-items: center;
     justify-content: center;
@@ -12,7 +14,8 @@
 
 @media (max-width:1365px) {
     .our-comment {
-        width: 768px;
+        width: 58.86%;
+        padding: 0 20.57%;
     }
 }
 
@@ -36,7 +39,7 @@
 .our-comment__annotation {
     display: block;
 
-    width: 814px;
+    width: 100%;
     margin-bottom: 46px;
 
     text-align: center;
@@ -60,7 +63,7 @@
     .our-comment__annotation {
         display: block;
 
-        width: 448px;
+        width: 100%;
 
         text-align: center;
 
