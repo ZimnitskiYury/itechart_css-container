@@ -1,3 +1,4 @@
+@import url("./nav-list.css");
 footer {
     display: flex;
     flex-direction: column;
@@ -17,25 +18,6 @@ footer {
 
     align-items: center;
     justify-content: space-between;
-}
-
-.nav__list {
-    display: flex;
-    flex-direction: row;
-
-    width: 734.75px;
-
-    align-self: flex-end;
-    justify-content: space-between;
-}
-
-.nav__list a {
-    display: block;
-
-    color: #2d2829;
-
-    font-family: "Circe";
-    font-size: 16px;
 }
 
 .footer__logo {
@@ -122,18 +104,6 @@ footer {
         font-family: "Playfair Display Bold";
         font-size: 18px;
     }
-    .nav__list {
-        width: 82.96%;
-        margin: 0;
-    }
-    .nav__list-item {
-        display: block;
-
-        color: #ffffff;
-
-        font-family: "Circe";
-        font-size: 12px;
-    }
     .footer__social {
         display: none;
     }
@@ -211,25 +181,6 @@ footer {
         font-family: "Playfair Display Bold";
         font-size: 28px;
     }
-    .nav__list {
-        flex-direction: column;
-
-        width: auto;
-        height: 176px;
-        margin: 0;
-        margin-bottom: 30px;
-
-        align-self: flex-start;
-        justify-content: space-between;
-    }
-    .nav__list-item {
-        display: block;
-
-        color: #ffffff;
-
-        font-family: "Circe";
-        font-size: 14px;
-    }
     .footer__social {
         display: none;
     }
@@ -254,10 +205,37 @@ footer {
         display: flex;
         flex-direction: row;
 
-        margin-bottom: 30px;
+        margin-bottom: 28px;
+
+        opacity: 0.2;
 
         align-items: flex-start;
-        justify-content: baseline;
+        justify-content: flex-start;
+    }
+    .footer__credentials-socials-instagram {
+        width: 23px;
+        height: 23px;
+        margin-right: 20px;
+
+        background-image: url("../../assets/svg/instagram-logo.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 23px;
+    }
+    .footer__credentials-socials-instagram:hover {
+        box-shadow: 0 2px 7.04px 0.96px rgba(255, 0, 67, 0.2);
+    }
+    .footer__credentials-socials-vk {
+        width: 23px;
+        height: 23px;
+
+        background-image: url("../../assets/svg/vk.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 23px;
+    }
+    .footer__credentials-socials-vk:hover {
+        box-shadow: 0 2px 7.04px 0.96px rgba(255, 0, 67, 0.2);
     }
     .footer__credentials-copyrights {
         margin-top: 0;
@@ -270,7 +248,15 @@ footer {
         font-family: Roboto;
         font-size: 12px;
     }
-    .footer__credentials-socials > a:first-of-type {
-        margin-right: 20px;
+    .footer__credentials-phone-link {
+        margin-bottom: 28px;
+
+        color: #ffffff;
+
+        font-family: "Circe";
+        font-size: 14px;
+    }
+    .contact-info__phone-link:hover {
+        color: #f50049;
     }
 }
