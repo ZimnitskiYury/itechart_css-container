@@ -89,8 +89,9 @@
 
 @media (max-width:1365px) {
     .reviews {
+        width: 87.5%;
         height: 235px;
-        padding-top: 45px;
+        padding: 45px 6.25% 0 6.25%;
     }
     .reviews__title {
         font-size: 28px;
@@ -98,6 +99,15 @@
     }
     .reviews__count {
         font-size: 12px;
+    }
+    .reviews__content {
+        width: 87.5%;
+    }
+    .reviews__content__left {
+        margin-right: 55px;
+    }
+    .reviews__content__right {
+        margin-left: 0;
     }
 }
 

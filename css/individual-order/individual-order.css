@@ -538,7 +538,7 @@
     margin-right: 40px;
 
     background-color: white;
-    background-image: url("../assets/img/decorative-1.png");
+    background-image: url("../../assets/img/decorative-1.png");
     background-size: 105%;
     box-shadow: 0 7px 12.74px 0.26px rgba(0, 0, 0, 0.05);
 
@@ -549,7 +549,7 @@
 .individual-order__decorative-variants-carousel > li:last-child {
     margin: 0;
 
-    background-image: url("../assets/img/decorative-2.png");
+    background-image: url("../../assets/img/decorative-2.png");
 }
 
 .individual-order__decorative-variant-title {

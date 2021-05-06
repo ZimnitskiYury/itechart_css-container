@@ -6,6 +6,7 @@
 }
 
 .dictum__user-photo {
+    min-width: 200px;
     margin-right: 20px;
 }
 
@@ -77,6 +78,11 @@
 @media (max-width:1365px) {
     .dictum__user {
         font-size: 16px;
+    }
+    .dictum__user-photo {
+        min-width: 110px;
+        min-height: 110px;
+        margin-bottom: 10px;
     }
     .dictum__user-info {
         font-size: 14px;
