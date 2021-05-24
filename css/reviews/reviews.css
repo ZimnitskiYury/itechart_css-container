@@ -7,9 +7,7 @@
     height: 452px;
     padding-top: 118px;
 
-    background-image: url("../../assets/img/reviews-background.png");
-    background-repeat: no-repeat;
-    background-position: top;
+    background: top no-repeat url("/assets/img/reviews-background.png");
 
     align-items: center;
 }
@@ -26,54 +24,38 @@
 
 .reviews__content {
     display: flex;
-    flex-direction: row;
 
     width: 840px;
     height: 260px;
 
     align-items: center;
-    justify-content: center;
 }
-
-.reviews__content__left {
+.reviews__content-arrow {
     display: flex;
 
     min-width: 40px;
     height: 40px;
+
+    border-radius: 50%;
+    background-color: white;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews__content-arrow:hover {
+    box-shadow: 0 2px 7.04px 0.96px rgba(255, 0, 67, 0.2);
+}
+
+.content-arrow_left {
     margin-right: 100px;
-
-    border-radius: 50%;
-    background-color: white;
-
-    align-items: center;
-    justify-content: center;
 }
 
-.reviews__content__left:hover {
-    box-shadow: 0 2px 7.04px 0.96px rgba(255, 0, 67, 0.2);
-}
-
-.reviews__content__right {
-    display: flex;
-
-    min-width: 40px;
-    height: 40px;
+.content-arrow_right {
     margin-left: 45px;
-
-    border-radius: 50%;
-    background-color: white;
-
-    align-items: center;
-    justify-content: center;
-}
-
-.reviews__content__right:hover {
-    box-shadow: 0 2px 7.04px 0.96px rgba(255, 0, 67, 0.2);
 }
 
 .reviews__count {
-    display: block;
-
     min-width: 55px;
 
     text-align: center;
@@ -91,11 +73,11 @@
     .reviews {
         width: 87.5%;
         height: 235px;
-        padding: 45px 6.25% 0 6.25%;
+        padding: 45px 6.25% 0;
     }
+
     .reviews__title {
         font-size: 28px;
-        line-height: auto;
     }
     .reviews__count {
         font-size: 12px;
@@ -103,45 +85,29 @@
     .reviews__content {
         width: 87.5%;
     }
-    .reviews__content__left {
+    .content-arrow_left {
         margin-right: 55px;
     }
-    .reviews__content__right {
-        margin-left: 0;
+    .content-arrow_right {
+        margin: 0;
     }
 }
 
 @media (max-width:767px) {
     .reviews {
-        width: 87.5%;
         height: auto;
-        padding: 48px 6.25% 0 6.25%;
 
         background-image: unset;
-
-        align-items: center;
     }
     .reviews__title {
         font-size: 24px;
-        line-height: auto;
     }
     .reviews__content {
-        display: flex;
         flex-direction: column;
 
-        width: 100%;
         height: auto;
-
-        align-items: center;
-        justify-content: center;
     }
-    .reviews__content__left {
+    .reviews__content-arrow {
         display: none;
-    }
-    .reviews__content__right {
-        display: none;
-    }
-    .reviews__count {
-        align-self: flex-end;
     }
 }
