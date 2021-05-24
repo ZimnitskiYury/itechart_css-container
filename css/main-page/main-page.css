@@ -8,16 +8,13 @@
     margin-top: 20px;
     padding: 0 5.34%;
 
-    background-image: url("../../assets/img/main-background.png");
-    background-repeat: no-repeat;
-    background-position: right;
-
-    align-items: flex-start;
-    justify-content: flex-start;
+    background: right no-repeat url("/assets/img/main-background.png");
 }
-
-.main-page__title {
+.main-page__header {
     margin-top: 130px;
+    margin-bottom: 62px;
+}
+.main-page__header-title {
     margin-bottom: 26px;
 
     letter-spacing: 5.87px;
@@ -29,9 +26,7 @@
     line-height: 70px;
 }
 
-.main-page__annotation {
-    margin-bottom: 62px;
-
+.main-page__header-annotation {
     color: #32313d;
 
     font-family: "Intro Script Base";
@@ -49,20 +44,19 @@
         height: 700px;
         margin-top: 13px;
 
-        background-image: url("../../assets/img/main-background-tablet.png");
-        background-position: right top;
+        background: no-repeat right top url("/assets/img/main-background-tablet.png");
     }
-    .main-page__title {
+    .main-page__header {
         margin-top: 89px;
-
+        margin-bottom: 54px;
+    }
+    .main-page__header-title {
         letter-spacing: 4.5px;
 
         font-size: 60px;
         line-height: 55px;
     }
-    .main-page__annotation {
-        margin-bottom: 54px;
-
+    .main-page__header-annotation {
         font-size: 36px;
     }
     .main-page__button {
@@ -74,42 +68,37 @@
 
 @media (max-width: 767px) {
     .main-page {
-        flex-direction: column;
-
         width: 87%;
         height: 435px;
         margin-top: 0;
-        padding: 0 6.25% 40px 6.25% !important;
+        padding: 0 6.25% 40px;
 
-        background-image: url("../../assets/img/main-background-mobile.png");
-        background-position: top;
+        background: top no-repeat url("/assets/img/main-background-mobile.png");
 
         align-items: center;
         justify-content: flex-end;
     }
-    .main-page__title {
+    .main-page__header {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 15px;
+
+        align-items: center;
+    }
+    .main-page__header-title {
         margin-bottom: 21px;
 
         text-align: center;
         letter-spacing: 3px;
 
-        color: #2e2829;
-
-        font-family: "Playfair Display Bold";
         font-size: 40px;
         line-height: 0.9;
     }
-    .main-page__annotation {
-        margin-top: 0;
-        margin-bottom: 15px;
-
-        color: #32313d;
-
-        font-family: "Intro Script Base";
+    .main-page__header-annotation {
         font-size: 22px;
     }
     .main-page__button {
-        width: 226px;
         margin-bottom: 0;
 
         order: 4;

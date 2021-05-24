@@ -1,425 +1,694 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/06f4c9154d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+    ></script>
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/06f4c9154d.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-</head>
-
-<body>
+  <body>
     <!-- HEADER IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <header class="header">
-        <div class="header__logo">
-            <a href="/index.html" class="header__logo-link">Cakes</a>
-        </div>
-        <a class="header__burger" href="/next">
-            <svg xmlns="http://www.w3.org/2000/svg" class="header__burger-ico" viewBox="0 0 512 512"><path  d="M491.318 235.318H20.682C9.26 235.318 0 244.577 0 256s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zM491.318 78.439H20.682C9.26 78.439 0 87.699 0 99.121c0 11.422 9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zM491.318 392.197H20.682C9.26 392.197 0 401.456 0 412.879s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682s-9.259-20.682-20.682-20.682z"/></svg>
-        </a>
-        <ul class="nav-menu" id="menu">
-            <li><a class="nav-menu__link" href="#categories">Наши торты</a></li>
-            <li><a class="nav-menu__link" href="#individual-order">Индивидуальный заказ</a></li>
-            <li><a class="nav-menu__link" href="#reviews">Отзывы</a></li>
-            <li><a class="nav-menu__link" href="#about-us">О нас</a></li>
-            <li><a class="nav-menu__link" href="#how-to-order">Как заказать</a></li>
-            <li><a class="nav-menu__link" href="#contacts">Контакты</a></li>
-        </ul>
-        <a href="tel:+7 906 899 92 96" class="header__phone"><i class="fas fa-phone-alt"></i> +7 906 899 92 96</a>
+      <div class="header__logo">
+        <a href="/index.html" class="header__logo-link">Cakes</a>
+      </div>
+      <a class="header__burger" href="/next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="header__burger-ico"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M491.318 235.318H20.682C9.26 235.318 0 244.577 0 256s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zM491.318 78.439H20.682C9.26 78.439 0 87.699 0 99.121c0 11.422 9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zM491.318 392.197H20.682C9.26 392.197 0 401.456 0 412.879s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682s-9.259-20.682-20.682-20.682z"
+          />
+        </svg>
+      </a>
+      <ul class="nav-menu" id="menu">
+        <li><a class="nav-menu__link" href="#categories">Наши торты</a></li>
+        <li>
+          <a class="nav-menu__link" href="#individual-order"
+            >Индивидуальный заказ</a
+          >
+        </li>
+        <li><a class="nav-menu__link" href="#reviews">Отзывы</a></li>
+        <li><a class="nav-menu__link" href="#about-us">О нас</a></li>
+        <li><a class="nav-menu__link" href="#how-to-order">Как заказать</a></li>
+        <li><a class="nav-menu__link" href="#contacts">Контакты</a></li>
+      </ul>
+      <a href="tel:+7 906 899 92 96" class="header__phone"
+        ><i class="fas fa-phone-alt"></i> +7 906 899 92 96</a
+      >
     </header>
 
     <!-- MAIN IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <main class="main-page">
-        <h1 class="main-page__title">Торты <br/>на заказ</h1>
-        <span class="main-page__annotation">Ручная работа</span>
-        <button class="main-page__button">Выбрать торт</button>
-        <ul class="pros">
-            <li class="pros__item">
-                <img class="pros_item-image" src="assets/img/natural-prod.png" height="55" />
-                <p class="pros__annotation">Натуральные ингредиенты</p>
-            </li>
-            <li class="pros__item">
-                <img class="pros_item-image" src="assets/img/delivery-free.png" height="55" />
-                <p class="pros__annotation">Доставка бесплатно<br/>при заказе от 2000 рублей*</p>
-            </li>
-        </ul>
+      <header class="main-page__header">
+        <h1 class="main-page__header-title">Торты <br />на заказ</h1>
+        <span class="main-page__header-annotation">Ручная работа</span>
+      </header>
+      <button class="main-page__button">Выбрать торт</button>
+      <ul class="pros">
+        <li class="pros__item">
+          <img
+            class="pros_item-image"
+            src="assets/img/natural-prod.png"
+            height="55"
+          />
+          <p class="pros__annotation">Натуральные ингредиенты</p>
+        </li>
+        <li class="pros__item">
+          <img
+            class="pros_item-image"
+            src="assets/img/delivery-free.png"
+            height="55"
+          />
+          <p class="pros__annotation">
+            Доставка бесплатно<br />при заказе от 2000 рублей*
+          </p>
+        </li>
+      </ul>
     </main>
 
     <!-- CATEGORIES IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <section class="categories" id="categories">
-        <h2 class="categories__title">Наши торты</h2>
+      <h2 class="categories__title">Наши торты</h2>
 
-        <ul class="categories__container">
-            <li class="categories__container-item">
-                <a href="/next">
-                    <span class="categories__name">Классические</span>
-                    <h4 class="categories__count">24 вида</h4>
-                    <img class="categories__image" src="./assets/img/category-classic.png" alt="category-classic">
-                    <div class="categories__more">
-                        <a class="categories__more-link" href="/next">Смотреть</a>
-                        <a href="/next"><img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
-                    </div>
-                </a>
-            </li>
+      <ul class="categories__container">
+        <li class="categories__container-item">
+          <a href="/next">
+            <span class="categories__name">Классические</span>
+            <h4 class="categories__count">24 вида</h4>
+            <img
+              class="categories__image"
+              src="./assets/img/category-classic.png"
+              alt="category-classic"
+            />
+            <div class="categories__more">
+              <a class="categories__more-link" href="/next">Смотреть</a>
+              <a href="/next"
+                ><img
+                  class="categories__more-arrow"
+                  src="./assets/img/more-arrow.png"
+                  alt="more-arrow"
+              /></a>
+            </div>
+          </a>
+        </li>
 
-            <li class="categories__container-item">
-                <a href="/next" class="categories__name">Муссовые</a>
-                <h4 class="categories__count">12 видов</h4>
-                <img class="categories__image" src="./assets/img/category-muss.png" alt="category-muss">
-                <div class="categories__more">
-                    <a class="categories__more-link" href="/next">Смотреть</a>
-                    <a href="/next"> <img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
-                </div>
-            </li>
+        <li class="categories__container-item">
+          <a href="/next" class="categories__name">Муссовые</a>
+          <h4 class="categories__count">12 видов</h4>
+          <img
+            class="categories__image"
+            src="./assets/img/category-muss.png"
+            alt="category-muss"
+          />
+          <div class="categories__more">
+            <a class="categories__more-link" href="/next">Смотреть</a>
+            <a href="/next">
+              <img
+                class="categories__more-arrow"
+                src="./assets/img/more-arrow.png"
+                alt="more-arrow"
+            /></a>
+          </div>
+        </li>
 
-            <li class="categories__container-item">
-                <a href="/next" class="categories__name">Свадебные</a>
-                <h4 class="categories__count">20 видов</h4>
-                <img class="categories__image" src="./assets/img/category-wedding.png" alt="category-wedding">
-                <div class="categories__more">
-                    <a class="categories__more-link" href="/next">Смотреть</a>
-                    <a href="/next"> <img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
-                </div>
-            </li>
+        <li class="categories__container-item">
+          <a href="/next" class="categories__name">Свадебные</a>
+          <h4 class="categories__count">20 видов</h4>
+          <img
+            class="categories__image"
+            src="./assets/img/category-wedding.png"
+            alt="category-wedding"
+          />
+          <div class="categories__more">
+            <a class="categories__more-link" href="/next">Смотреть</a>
+            <a href="/next">
+              <img
+                class="categories__more-arrow"
+                src="./assets/img/more-arrow.png"
+                alt="more-arrow"
+            /></a>
+          </div>
+        </li>
 
-            <li class="categories__container-item">
-                <a href="/next" class="categories__name">Мужчинам</a>
-                <h4 class="categories__count">24 вида</h4>
-                <img class="categories__image" src="./assets/img/category-mens.png" alt="category-mens">
-                <div class="categories__more">
-                    <a class="categories__more-link" href="/next">Смотреть</a>
-                    <a href="/next"> <img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
-                </div>
-            </li>
+        <li class="categories__container-item">
+          <a href="/next" class="categories__name">Мужчинам</a>
+          <h4 class="categories__count">24 вида</h4>
+          <img
+            class="categories__image"
+            src="./assets/img/category-mens.png"
+            alt="category-mens"
+          />
+          <div class="categories__more">
+            <a class="categories__more-link" href="/next">Смотреть</a>
+            <a href="/next">
+              <img
+                class="categories__more-arrow"
+                src="./assets/img/more-arrow.png"
+                alt="more-arrow"
+            /></a>
+          </div>
+        </li>
 
-            <li class="categories__container-item">
-                <a href="/next" class="categories__name">Женщинам</a>
-                <h4 class="categories__count">16 видов</h4>
-                <img class="categories__image" src="./assets/img/category-women.png" alt="category-women">
-                <div class="categories__more">
-                    <a class="categories__more-link" href="/next">Смотреть</a>
-                    <a href="/next"> <img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
-                </div>
-            </li>
+        <li class="categories__container-item">
+          <a href="/next" class="categories__name">Женщинам</a>
+          <h4 class="categories__count">16 видов</h4>
+          <img
+            class="categories__image"
+            src="./assets/img/category-women.png"
+            alt="category-women"
+          />
+          <div class="categories__more">
+            <a class="categories__more-link" href="/next">Смотреть</a>
+            <a href="/next">
+              <img
+                class="categories__more-arrow"
+                src="./assets/img/more-arrow.png"
+                alt="more-arrow"
+            /></a>
+          </div>
+        </li>
 
-            <li class="categories__container-item">
-                <a href="/next" class="categories__name">Детские</a>
-                <h4 class="categories__count">18 видов</h4>
-                <img class="categories__image" src="./assets/img/category-children.png" alt="category-children">
-                <div class="categories__more">
-                    <a class="categories__more-link" href="/next">Смотреть</a>
-                    <a href="/next"> <img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
-                </div>
-            </li>
-        </ul>
-
+        <li class="categories__container-item">
+          <a href="/next" class="categories__name">Детские</a>
+          <h4 class="categories__count">18 видов</h4>
+          <img
+            class="categories__image"
+            src="./assets/img/category-children.png"
+            alt="category-children"
+          />
+          <div class="categories__more">
+            <a class="categories__more-link" href="/next">Смотреть</a>
+            <a href="/next">
+              <img
+                class="categories__more-arrow"
+                src="./assets/img/more-arrow.png"
+                alt="more-arrow"
+            /></a>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <!-- INDIVIDUAL ORDER WORKS ONLY IN DESTOP VERSION  -->
     <section class="individual-order" id="individual-order">
-        <header class="individual-order__header">
-            <h2 class="individual-order__title">Индивидуальный заказ</h2>
-            <span class="individual-order__annotation">Соберите торт в 3 шага</span>
-        </header>
-        <ol class="individual-order__steps">
-            <li>
-                <p class="individual-order__step-header">Выберите начинку</p>
-                <img class="individual-order__left-arrow" src="./assets/svg/arrow-left-icon.svg" alt="arrow-left-icon">
-                <div class="individual-order__step-one-content">
-                    <div class="individual-order__cake-filling-image">
-                        <img src="./assets/img/step-one.png" alt="step-one">
-                    </div>
+      <header class="individual-order__header">
+        <h2 class="individual-order__title">Индивидуальный заказ</h2>
+        <span class="individual-order__annotation">Соберите торт в 3 шага</span>
+      </header>
+      <ol class="individual-order__steps">
+        <li>
+          <p class="individual-order__step-header">Выберите начинку</p>
+          <img
+            class="individual-order__left-arrow"
+            src="./assets/svg/arrow-left-icon.svg"
+            alt="arrow-left-icon"
+          />
+          <div class="individual-order__step-one-content">
+            <div class="individual-order__cake-filling-image">
+              <img src="./assets/img/step-one.png" alt="step-one" />
+            </div>
 
-                    <article class="individual-order__cake-filling">
-                        <h3 class="individual-order__cake-filling-header">Шоколадный ганаш</h3>
-                        <p class="individual-order__cake-filling-annotation">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-                        <span class="individual-order__cake-filling-price">1000 руб/кг</span>
-                        <button class="individual-order__cake-filling-select">Выбрать</button>
-                    </article>
-                    <span class="individual-order__cake-filling-count">1/12</span>
-                    <img class="individual-order__right-arrow" src="./assets/svg/arrow-right-icon.svg" alt="arrow-right-icon">
-                </div>
+            <article class="individual-order__cake-filling">
+              <h3 class="individual-order__cake-filling-header">
+                Шоколадный ганаш
+              </h3>
+              <p class="individual-order__cake-filling-annotation">
+                Ароматный шоколадный бисквит, густой шоколадный крем – самый
+                шоколадный из всех возможных десертов!
+              </p>
+              <span class="individual-order__cake-filling-price"
+                >1000 руб/кг</span
+              >
+              <button class="individual-order__cake-filling-select">
+                Выбрать
+              </button>
+            </article>
+            <span class="individual-order__cake-filling-count">1/12</span>
+            <img
+              class="individual-order__right-arrow"
+              src="./assets/svg/arrow-right-icon.svg"
+              alt="arrow-right-icon"
+            />
+          </div>
+        </li>
+        <li>
+          <p class="individual-order__step-header">Размер</p>
+          <ul class="individual-order__size">
+            <li class="individual-order__select-size">
+              <img src="./assets/svg/circle-1.svg" alt="size-1" />
+              <p>17-18 см <br />(1 кг – 6 персон)</p>
             </li>
-            <li>
-                <p class="individual-order__step-header">Размер</p>
-                <ul class="individual-order__size">
-                    <li class="individual-order__select-size">
-                        <img src="./assets/svg/circle-1.svg" alt="size-1">
-                        <p>17-18 см <br>(1 кг – 6 персон)</p>
-                    </li>
-                    <li class="individual-order__select-size">
-                        <img src="./assets/svg/circle-2.svg" alt="size-2">
-                        <p>23-24 см <br>(10–12 персон)</p>
-                    </li>
-                    <li class="individual-order__select-size">
-                        <img src="./assets/svg/circle-3.svg" alt="size-3">
-                        <p>Два яруса<br>25 и 20 см<br>(15–20 персон)</p>
-                    </li>
-                    <li class="individual-order__select-size">
-                        <img src="./assets/svg/circle-4.svg" alt="size-4">
-                        <p>Три яруса<br>30, 25 и 18 см<br>(25–30 персон)</p>
-                    </li>
-                </ul>
+            <li class="individual-order__select-size">
+              <img src="./assets/svg/circle-2.svg" alt="size-2" />
+              <p>23-24 см <br />(10–12 персон)</p>
             </li>
-            <li>
-                <p class="individual-order__step-header">Оформление</p>
-                <img class="individual-order__step-label" src="./assets/img/step-3-cake.png" alt="step-3-cake">
-                <div class="individual-order__decorative">
-                    <img src="./assets/svg/arrow-left-mini.svg" alt="arrow-left-mini">
-                    <ul class="individual-order__decorative-variants-carousel">
-                        <li>
-                            <span class="individual-order__decorative-variant-title">Ягодное ассорти</span>
-                            <span class="individual-order__decorative-variant-price">700 руб/кг</span>
-                        </li>
-                        <li>
-                            <span class="individual-order__decorative-variant-title">Маршмэллоу</span>
-                            <span class="individual-order__decorative-variant-price">600 руб/кг</span>
-                        </li>
-                    </ul>
-                    <span class="individual-order__decorative-variant-count">2/35</span>
-                    <img src="./assets/svg/arrow-right-mini.svg" alt="arrow-right-mini">
-                </div>
-                <div class="individual-order__summary">
-                    <h2>Ваш выбор</h2>
-                    <form class="individual-order__form" action="/action">
-                        <div class="individual-order__form-input-column">
-                            <p>Начинка</p>
-                            <input class="individual-order__form-input" type="text" placeholder="Начинка" name="name" id='name' required>
-                        </div>
+            <li class="individual-order__select-size">
+              <img src="./assets/svg/circle-3.svg" alt="size-3" />
+              <p>Два яруса<br />25 и 20 см<br />(15–20 персон)</p>
+            </li>
+            <li class="individual-order__select-size">
+              <img src="./assets/svg/circle-4.svg" alt="size-4" />
+              <p>Три яруса<br />30, 25 и 18 см<br />(25–30 персон)</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="individual-order__step-header">Оформление</p>
+          <img
+            class="individual-order__step-label"
+            src="./assets/img/step-3-cake.png"
+            alt="step-3-cake"
+          />
+          <div class="individual-order__decorative">
+            <img src="./assets/svg/arrow-left-mini.svg" alt="arrow-left-mini" />
+            <ul class="individual-order__decorative-variants-carousel">
+              <li>
+                <span class="individual-order__decorative-variant-title"
+                  >Ягодное ассорти</span
+                >
+                <span class="individual-order__decorative-variant-price"
+                  >700 руб/кг</span
+                >
+              </li>
+              <li>
+                <span class="individual-order__decorative-variant-title"
+                  >Маршмэллоу</span
+                >
+                <span class="individual-order__decorative-variant-price"
+                  >600 руб/кг</span
+                >
+              </li>
+            </ul>
+            <span class="individual-order__decorative-variant-count">2/35</span>
+            <img
+              src="./assets/svg/arrow-right-mini.svg"
+              alt="arrow-right-mini"
+            />
+          </div>
+          <div class="individual-order__summary">
+            <h2>Ваш выбор</h2>
+            <form class="individual-order__form" action="/action">
+              <div class="individual-order__form-input-column">
+                <p>Начинка</p>
+                <input
+                  class="individual-order__form-input"
+                  type="text"
+                  placeholder="Начинка"
+                  name="name"
+                  id="name"
+                  required
+                />
+              </div>
 
-                        <div class="individual-order__form-input-column">
-                            <p>Размер</p>
-                            <input class="individual-order__form-input" type="text" placeholder="Размер" name="size" id='size' required>
-                        </div>
-                        <div class="individual-order__form-input-column">
-                            <p>Оформление</p>
-                            <input class="individual-order__form-input" type="text" placeholder="Оформление" name="decorative" id='decorative' required>
-                        </div>
-                        <button class="individual-order__form-button">Заказать</button>
-                    </form>
-                </div>
-            </li>
-        </ol>
+              <div class="individual-order__form-input-column">
+                <p>Размер</p>
+                <input
+                  class="individual-order__form-input"
+                  type="text"
+                  placeholder="Размер"
+                  name="size"
+                  id="size"
+                  required
+                />
+              </div>
+              <div class="individual-order__form-input-column">
+                <p>Оформление</p>
+                <input
+                  class="individual-order__form-input"
+                  type="text"
+                  placeholder="Оформление"
+                  name="decorative"
+                  id="decorative"
+                  required
+                />
+              </div>
+              <button class="individual-order__form-button">Заказать</button>
+            </form>
+          </div>
+        </li>
+      </ol>
     </section>
 
     <!-- REVIEWS IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <section class="reviews" id="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__content">
-            <a href="/next">
-                <div class="reviews__content__left">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="16px">
-                        <path fill-rule="evenodd"  fill="rgb(241, 125, 145)" d="M0.441,9.049 C0.155,8.766 -0.003,8.392 -0.003,7.990 C-0.003,7.590 0.155,7.214 0.441,6.931 L7.284,0.290 C7.680,-0.099 8.320,-0.099 8.715,0.290 C9.110,0.681 9.110,1.313 8.715,1.703 L2.228,7.990 L8.715,14.278 C9.110,14.667 9.110,15.299 8.715,15.690 C8.320,16.081 7.680,16.081 7.284,15.690 L0.441,9.049 L0.441,9.049 L0.441,9.049 Z"/>
-                    </svg>
-
-                </div>
-            </a>
-            <article class="dictum">
-                <div class="dictum__user-photo">
-                    <img src="./assets/img/reviews-persone.png" alt="reviews-persone" height="100%" width="100%">
-                </div>
-                <div class="dictum__content">
-                    <header class="dictum__header">
-                        <h1 class="dictum__user">Мария</h1>
-                        <h2 class="dictum__user-info">юрист, 33 года</h2>
-                    </header>
-                    <p class="dictum__annotation">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) </p>
-                    <a class="dictum__more" href="/next">Развернуть</a>
-                </div>
-            </article>
-            <span class="reviews__count">1/26</span>
-            <a href="/next">
-                <div class="reviews__content__right">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="16px">
-                            <path fill-rule="evenodd"  fill="rgb(241, 125, 145)" d="M8.561,9.049 C8.845,8.766 9.003,8.392 9.003,7.990 C9.003,7.590 8.845,7.214 8.561,6.931 L1.741,0.290 C1.347,-0.099 0.709,-0.099 0.315,0.290 C-0.078,0.681 -0.078,1.313 0.315,1.703 L6.779,7.990 L0.315,14.278 C-0.078,14.667 -0.078,15.299 0.315,15.690 C0.709,16.081 1.347,16.081 1.741,15.690 L8.561,9.049 L8.561,9.049 L8.561,9.049 Z"/>
-                    </svg>
-
-                </div>
-            </a>
-        </div>
+      <h2 class="reviews__title">Отзывы</h2>
+      <div class="reviews__content">
+        <a href="/next">
+          <div class="reviews__content__left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="10px"
+              height="16px"
+            >
+              <path
+                fill-rule="evenodd"
+                fill="rgb(241, 125, 145)"
+                d="M0.441,9.049 C0.155,8.766 -0.003,8.392 -0.003,7.990 C-0.003,7.590 0.155,7.214 0.441,6.931 L7.284,0.290 C7.680,-0.099 8.320,-0.099 8.715,0.290 C9.110,0.681 9.110,1.313 8.715,1.703 L2.228,7.990 L8.715,14.278 C9.110,14.667 9.110,15.299 8.715,15.690 C8.320,16.081 7.680,16.081 7.284,15.690 L0.441,9.049 L0.441,9.049 L0.441,9.049 Z"
+              />
+            </svg>
+          </div>
+        </a>
+        <article class="dictum">
+          <div class="dictum__user-photo">
+            <img
+              src="./assets/img/reviews-persone.png"
+              alt="reviews-persone"
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div class="dictum__content">
+            <header class="dictum__header">
+              <h1 class="dictum__user">Мария</h1>
+              <h2 class="dictum__user-info">юрист, 33 года</h2>
+            </header>
+            <p class="dictum__annotation">
+              Заказывала торт брауни на юбилей мужа. Гости были в восторге!
+              Отдельное спасибо за своевременную доставку! Теперь будем
+              заказывать торты только у вас для наших семейных праздников:) 
+            </p>
+            <a class="dictum__more" href="/next">Развернуть</a>
+          </div>
+        </article>
+        <span class="reviews__count">1/26</span>
+        <a href="/next">
+          <div class="reviews__content__right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="9px"
+              height="16px"
+            >
+              <path
+                fill-rule="evenodd"
+                fill="rgb(241, 125, 145)"
+                d="M8.561,9.049 C8.845,8.766 9.003,8.392 9.003,7.990 C9.003,7.590 8.845,7.214 8.561,6.931 L1.741,0.290 C1.347,-0.099 0.709,-0.099 0.315,0.290 C-0.078,0.681 -0.078,1.313 0.315,1.703 L6.779,7.990 L0.315,14.278 C-0.078,14.667 -0.078,15.299 0.315,15.690 C0.709,16.081 1.347,16.081 1.741,15.690 L8.561,9.049 L8.561,9.049 L8.561,9.049 Z"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
     </section>
 
     <!-- ABOUT_US IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <section class="about-us" id="about-us">
-        <div class="about-us__content">
-            <h2 class="about-us__title">О нас</h2>
-            <div class="about-us__confectioner">
-                <h3 class="about-us__sub-header">О кондитере</h3>
-                <div class="about-us__dictum">
-                    <h4 class="about-us__dictum-title">Кондитер – как призвание</h4>
-                    <p class="about-us__dictum-annotation">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство. С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.</p>
-                </div>
-                <div class="about-us__dictum" style="margin-top: 20px;">
-                    <h4 class="about-us__dictum-title">Принцип – натуральные ингредиенты</h4>
-                    <p class="about-us__dictum-annotation">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.</p>
-                </div>
-            </div>
+      <div class="about-us__content">
+        <h2 class="about-us__title">О нас</h2>
+        <div class="about-us__confectioner">
+          <h3 class="about-us__sub-header">О кондитере</h3>
+          <div class="about-us__dictum">
+            <h4 class="about-us__dictum-title">Кондитер – как призвание</h4>
+            <p class="about-us__dictum-annotation">
+              Павел — профессиональный повар в различных гастрономических
+              областях, но однажды его сердце покорило кондитерское искусство. С
+              ранних лет он увлекался утонченным мастерством и обратился к своим
+              талантам как кондитер.
+            </p>
+          </div>
+          <div class="about-us__dictum" style="margin-top: 20px">
+            <h4 class="about-us__dictum-title">
+              Принцип – натуральные ингредиенты
+            </h4>
+            <p class="about-us__dictum-annotation">
+              Сегодня Павел радует изделиями не только близких, но и тех, кто
+              предпочитает качественную продукцию для торжества, а главным
+              принципом является выбор натуральных ингредиентов.
+            </p>
+          </div>
         </div>
-        <div class="about-us__profile-photo">
-            <img src="./assets/img/about-us.png" alt="about-us" width="100%" height="100%">
-        </div>
+      </div>
+      <div class="about-us__profile-photo">
+        <img
+          src="./assets/img/about-us.png"
+          alt="about-us"
+          width="100%"
+          height="100%"
+        />
+      </div>
     </section>
 
     <!-- OUR-COMMENT IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <section class="our-comment">
-        <span class="our-comment__title">’’</span>
-        <p class="our-comment__annotation">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</p>
-        <img class="our-comment__autograph" src="./assets/img/autograph.png" alt="autograph">
+      <span class="our-comment__title">’’</span>
+      <p class="our-comment__annotation">
+        Я за простые рецепты. В Италии это называют cucina povera: когда обычные
+        ингредиенты превращаются в божественное блюдо.
+      </p>
+      <img
+        class="our-comment__autograph"
+        src="./assets/img/autograph.png"
+        alt="autograph"
+      />
     </section>
 
     <!-- OUR-ADVANTAGES IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <section class="our-advantages">
-        <h2 class="our-advantages__title">Наши преимущества</h2>
-        <span class="our-advantages__annotation">Почему нас выбирают ?</span>
-        <ul class="our-advantages__list">
-            <li class="our-advantages__list-item">
-                <img class="our-advantages__list-item-image" src="./assets/img/natural-prod.png" alt="natural-product">
-                <article class="our-advantages__advantage">
-                    <h3 class="our-advantages__advantage-title">Без искусственных добавок
-                    </h3>
-                    <p class="our-advantages__advantage-annotation">Работаем с натуральными ингредиентами и свежими продуктами
-                    </p>
-                </article>
-            </li>
-            <li class="our-advantages__list-item">
-                <img class="our-advantages__list-item-image" src="./assets/img/fresh-prod.png" alt="fresh-prod">
-                <article class="our-advantages__advantage">
-                    <h3 class="our-advantages__advantage-title">Свежий торт в день торжества
-                    </h3>
-                    <p class="our-advantages__advantage-annotation">Торты изготавливаются в течение суток до отправки</p>
-                </article>
-            </li>
-        </ul>
-        <div class="our-advantages__care">
-            <h2 class="our-advantages__care-title">Забота о клиентах</h2>
-            <span class="our-advantages__care-annotation">Для нас важно</span>
-            <p class="our-advantages__care-content">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
-        </div>
+      <h2 class="our-advantages__title">Наши преимущества</h2>
+      <span class="our-advantages__annotation">Почему нас выбирают ?</span>
+      <ul class="our-advantages__list">
+        <li class="our-advantages__list-item">
+          <img
+            class="our-advantages__list-item-image"
+            src="./assets/img/natural-prod.png"
+            alt="natural-product"
+          />
+          <article class="our-advantages__advantage">
+            <h3 class="our-advantages__advantage-title">
+              Без искусственных добавок
+            </h3>
+            <p class="our-advantages__advantage-annotation">
+              Работаем с натуральными ингредиентами и свежими продуктами
+            </p>
+          </article>
+        </li>
+        <li class="our-advantages__list-item">
+          <img
+            class="our-advantages__list-item-image"
+            src="./assets/img/fresh-prod.png"
+            alt="fresh-prod"
+          />
+          <article class="our-advantages__advantage">
+            <h3 class="our-advantages__advantage-title">
+              Свежий торт в день торжества
+            </h3>
+            <p class="our-advantages__advantage-annotation">
+              Торты изготавливаются в течение суток до отправки
+            </p>
+          </article>
+        </li>
+      </ul>
+      <div class="our-advantages__care">
+        <h2 class="our-advantages__care-title">Забота о клиентах</h2>
+        <span class="our-advantages__care-annotation">Для нас важно</span>
+        <p class="our-advantages__care-content">
+          Нам важно чтобы каждый торт был безупречным, как внутри, так и
+          снаружи, чтобы он был создан исключительно для вас и для вашего
+          события.
+        </p>
+      </div>
     </section>
 
     <!-- HOW-TO-ORDER IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <section class="order" id="how-to-order">
-        <ol class="order__instruction">
-            <h2 class="order__instruction-header">Как заказать</h2>
-            <li class="order__step">
-                <article class="order__step-description">
-                    <span class="order__title">Срок заказа</span>
-                    <p class="order__annotation">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
-                </article>
-            </li>
-            <li class="order__step">
-                <article class="order__step-description">
-                    <span class="order__title">Доставка по городу</span>
-                    <p class="order__annotation">Доставка в пределах города 200 рублей , при заказе на сумму более 2000 доставка бесплатно.</p>
-                </article>
-            </li>
-            <li class="order__step">
-                <article class="order__step-description">
-                    <span class="order__title">Доставка за городом</span>
-                    <p class="order__annotation">Доставка за пределами города рассчитывается индивидуально.</p>
-                </article>
-            </li>
-        </ol>
+      <ol class="order__instruction">
+        <h2 class="order__instruction-header">Как заказать</h2>
+        <li class="order__step">
+          <article class="order__step-description">
+            <span class="order__title">Срок заказа</span>
+            <p class="order__annotation">
+              Размещать заказы желательно за 2-3 дня. На выходные заказы лучше
+              размещать минимум за неделю.
+            </p>
+          </article>
+        </li>
+        <li class="order__step">
+          <article class="order__step-description">
+            <span class="order__title">Доставка по городу</span>
+            <p class="order__annotation">
+              Доставка в пределах города 200 рублей , при заказе на сумму более
+              2000 доставка бесплатно.
+            </p>
+          </article>
+        </li>
+        <li class="order__step">
+          <article class="order__step-description">
+            <span class="order__title">Доставка за городом</span>
+            <p class="order__annotation">
+              Доставка за пределами города рассчитывается индивидуально.
+            </p>
+          </article>
+        </li>
+      </ol>
     </section>
 
     <!-- CONTACTS IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <section class="contacts" id="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <span class="contacts__annotation">Остались вопросы?</span>
-        <div class="contacts__container">
-            <form class="feedback-form" action="/action">
-                <p class="feedback-form__title">Заполните форму ниже и наш кондитер свяжется с Вами</p>
-                <input type="text" class="feedback-form__input" placeholder="Ваше имя" name="name" id='name' required>
+      <h2 class="contacts__title">Контакты</h2>
+      <span class="contacts__annotation">Остались вопросы?</span>
+      <div class="contacts__container">
+        <form class="feedback-form" action="/action">
+          <p class="feedback-form__title">
+            Заполните форму ниже и наш кондитер свяжется с Вами
+          </p>
+          <input
+            type="text"
+            class="feedback-form__input"
+            placeholder="Ваше имя"
+            name="name"
+            id="name"
+            required
+          />
 
-                <input type="text" class="feedback-form__input" placeholder="Email адрес" name="email" id='email' required>
+          <input
+            type="text"
+            class="feedback-form__input"
+            placeholder="Email адрес"
+            name="email"
+            id="email"
+            required
+          />
 
-                <textarea class="feedback-form__input-question" placeholder="Ваш вопрос" name="question" id='question' required></textarea>
-                <div class="feedback-form__button">
-                    <button>Отправить</button>
-                </div>
-            </form>
-            <ul class="contact-info__list">
-                <li class="contact-info__list-item">
-                    <p class="contact-info__phone-headline"> Или позвоните по телефону:</p>
-                    <a class="contact-info__phone-link" href="tel:+79068999296"><i class="fas fa-phone-alt"></i> +7 906 899 92 96 </a>
-                </li>
-                <li class="contact-info__list-item">
-                    <p class="contact-info__email-headline"> Наша почта:</p>
-                    <a class="contact-info__email-link" href="mailto:bakerybypavel@mail.ru"><i class="fas fa-envelope-open-text"></i> bakerybypavel@mail.ru</a>
-                </li>
-                <li class="contact-info__list-item">
-                    <p class="contact-info__socials-headline">Мы в соц. сетях:</p>
-                    <div class="contact-info__socials-container">
-                        <a class="contact-info__socials-instagram" href="https://instagram.com">
-                        </a>
-                        <a class="contact-info__socials-vk" href="https://vk.com">
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+          <textarea
+            class="feedback-form__input-question"
+            placeholder="Ваш вопрос"
+            name="question"
+            id="question"
+            required
+          ></textarea>
+          <div class="feedback-form__button">
+            <button>Отправить</button>
+          </div>
+        </form>
+        <ul class="contact-info__list">
+          <li class="contact-info__list-item">
+            <p class="contact-info__phone-headline">
+              Или позвоните по телефону:
+            </p>
+            <a class="contact-info__phone-link" href="tel:+79068999296"
+              ><i class="fas fa-phone-alt"></i> +7 906 899 92 96
+            </a>
+          </li>
+          <li class="contact-info__list-item">
+            <p class="contact-info__email-headline">Наша почта:</p>
+            <a
+              class="contact-info__email-link"
+              href="mailto:bakerybypavel@mail.ru"
+              ><i class="fas fa-envelope-open-text"></i>
+              bakerybypavel@mail.ru</a
+            >
+          </li>
+          <li class="contact-info__list-item">
+            <p class="contact-info__socials-headline">Мы в соц. сетях:</p>
+            <div class="contact-info__socials-container">
+              <a
+                class="contact-info__socials-instagram"
+                href="https://instagram.com"
+              >
+              </a>
+              <a class="contact-info__socials-vk" href="https://vk.com"> </a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- FOOTER IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <footer>
-        <div class="footer__menu">
-            <div class="footer__logo">
-                <h5 class="logo__text">Cakes</h5>
-            </div>
+      <div class="footer__menu">
+        <div class="footer__logo">
+          <h5 class="logo__text">Cakes</h5>
+        </div>
 
-            <ul class="nav-list">
-                <li class="nav-list__item"><a class="nav-list__link" href="#categories">Наши торты</a></li>
-                <li class="nav-list__item"><a class="nav-list__link" href="#individual-order">Индивидуальный заказ</a></li>
-                <li class="nav-list__item"><a class="nav-list__link" href="#reviews">Отзывы</a></li>
-                <li class="nav-list__item"><a class="nav-list__link" href="#about-us">О нас</a></li>
-                <li class="nav-list__item"><a class="nav-list__link" href="#how-to-order">Как заказать</a></li>
-                <li class="nav-list__item"><a class="nav-list__link" href="#contacts">Контакты</a></li>
-            </ul>
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#categories">Наши торты</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#individual-order"
+              >Индивидуальный заказ</a
+            >
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#about-us">О нас</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#how-to-order">Как заказать</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
 
-            <div class="footer__social">
-                <a href="https://instagram.com"><img src="./assets/img/social_instagram.png" alt="Наш инстаграм" /></a>
-                <a href="https://vk.com"><img src="./assets/img/social_vk.png" alt="Наш Вк" /></a>
-            </div>
+        <div class="footer__social">
+          <a href="https://instagram.com"
+            ><img src="./assets/img/social_instagram.png" alt="Наш инстаграм"
+          /></a>
+          <a href="https://vk.com"
+            ><img src="./assets/img/social_vk.png" alt="Наш Вк"
+          /></a>
         </div>
-        <div class="footer__credentials">
-            <hr class="footer__credentials-line">
-            <span class="footer__credentials-copyright">&#169; 2018 Cakes</span>
+      </div>
+      <div class="footer__credentials">
+        <hr class="footer__credentials-line" />
+        <span class="footer__credentials-copyright">&#169; 2018 Cakes</span>
+      </div>
+      <div class="footer__credentials-tablet">
+        <hr class="footer__credentials-line" />
+        <div class="footer__credentials-socials">
+          <span class="footer__credentials-copyright">&#169; 2018 Cakes</span>
+          <a href="https://instagram.com"
+            ><img src="./assets/img/social_instagram.png" alt="Наш инстаграм"
+          /></a>
+          <a href="https://vk.com"
+            ><img src="./assets/img/social_vk.png" alt="Наш Вк"
+          /></a>
         </div>
-        <div class="footer__credentials-tablet">
-            <hr class="footer__credentials-line">
-            <div class="footer__credentials-socials">
-                <span class="footer__credentials-copyright">&#169; 2018 Cakes</span>
-                <a href="https://instagram.com"><img src="./assets/img/social_instagram.png" alt="Наш инстаграм" /></a>
-                <a href="https://vk.com"><img src="./assets/img/social_vk.png" alt="Наш Вк" /></a>
-            </div>
+      </div>
+      <div class="footer__credentials-mobile">
+        <a class="footer__credentials-phone-link" href="tel:+79068999296"
+          ><i class="fas fa-phone-alt"></i> +7 906 899 92 96
+        </a>
+        <div class="footer__credentials-socials">
+          <a
+            class="footer__credentials-socials-instagram"
+            href="https://instagram.com"
+          >
+          </a>
+          <a class="footer__credentials-socials-vk" href="https://vk.com"> </a>
         </div>
-        <div class="footer__credentials-mobile">
-            <a class="footer__credentials-phone-link" href="tel:+79068999296"><i class="fas fa-phone-alt"></i> +7 906 899 92 96 </a>
-            <div class="footer__credentials-socials">
-                <a class="footer__credentials-socials-instagram" href="https://instagram.com">
-                </a>
-                <a class="footer__credentials-socials-vk" href="https://vk.com">
-                </a>
-            </div>
-            <hr class="footer__credentials-line">
-            <span class="footer__credentials-copyright">&#169; 2018 Cakes</span>
-        </div>
+        <hr class="footer__credentials-line" />
+        <span class="footer__credentials-copyright">&#169; 2018 Cakes</span>
+      </div>
     </footer>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $("#menu").on("click", "a", function(event) {
-                event.preventDefault();
-                var id = $(this).attr('href'),
-                    top = $(id).offset().top;
-                $('body,html').animate({
-                    scrollTop: top
-                }, 1500);
-            });
+      $(document).ready(function () {
+        $("#menu").on("click", "a", function (event) {
+          event.preventDefault();
+          var id = $(this).attr("href"),
+            top = $(id).offset().top;
+          $("body,html").animate(
+            {
+              scrollTop: top,
+            },
+            1500
+          );
         });
+      });
     </script>
-</body>
-
+  </body>
 </html>

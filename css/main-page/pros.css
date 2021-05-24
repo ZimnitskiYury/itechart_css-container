@@ -1,18 +1,15 @@
 .pros {
     display: flex;
-    flex-direction: row;
 
     width: 460px;
 
-    align-items: baseline;
     justify-content: space-between;
 }
 
 .pros__item {
     display: flex;
-    flex-direction: row;
 
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -24,8 +21,6 @@
     font-family: "Circe";
     font-size: 14px;
     line-height: 18px;
-
-    align-self: center;
 }
 
 @media (max-width: 1365px) {
@@ -36,25 +31,13 @@
 
 @media (max-width: 767px) {
     .pros {
-        display: flex;
         flex-direction: column;
 
         width: auto;
-        margin-top: 0;
         margin-bottom: 36px;
-
-        align-items: baseline;
-        align-self: center;
-        justify-content: space-between;
     }
     .pros__item {
-        display: flex;
-        flex-direction: row;
-
         height: 45px;
-
-        align-items: center;
-        justify-content: flex-start;
     }
     .pros_item-image {
         width: 33px;
