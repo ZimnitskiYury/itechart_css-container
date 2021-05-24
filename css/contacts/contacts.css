@@ -6,13 +6,10 @@
 
     width: 1220px;
     height: 797px;
-    padding: 48px 73px 0 73px;
+    padding: 48px 73px 0;
 
-    background-color: #fbebea;
-    background-image: url("../../assets/img/contacts-cake.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 886px auto;
+    background: right bottom no-repeat #fbebea url("/assets/img/contacts-cake.png") ;
+    background-size: 886px auto ;
 
     background-blend-mode: multiply;
 }
@@ -37,16 +34,15 @@
 
 .contacts__container {
     display: flex;
-    flex-direction: row;
 }
 
 @media (max-width:1365px) {
     .contacts {
         width: 87.5%;
         height: 541px;
-        padding: 48px 6.25% 0 6.25%;
+        padding: 48px 6.25% 0;
 
-        background-image: url("../../assets/img/contacts-cake-tablet.png");
+        background-image: url("/assets/img/contacts-cake-tablet.png");
         background-size: 458px auto;
     }
     .contacts__title {
@@ -61,20 +57,13 @@
 
 @media (max-width:767px) {
     .contacts {
-        width: 87%;
         height: 748px;
-        padding: 40px 6.25% 0 6.25%;
+        padding-top: 40px;
 
         background-image: none;
     }
-    .contacts__title {
-        font-size: 27.94px;
-    }
+
     .contacts__container {
-        display: flex;
         flex-direction: column;
-    }
-    .contacts__annotation {
-        font-size: 21.95px;
     }
 }
