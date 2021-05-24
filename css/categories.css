@@ -7,7 +7,7 @@
 .categories__title {
     display: block;
 
-    letter-spacing: 0.40px;
+    letter-spacing: 0.4px;
 
     color: #2d2829;
 
@@ -44,7 +44,11 @@
     align-items: center;
 }
 
-@media (min-width:1366px) {
+.categories__container-item:hover .categories__more:before {
+    content: "Смотреть";
+}
+
+@media (min-width: 1366px) {
     .categories__container-item:first-of-type {
         display: flex;
         overflow: hidden;
@@ -120,7 +124,7 @@
     justify-content: flex-end;
 }
 
-.categories__more-link {
+.categories__more:hover .categories__more-link {
     display: none;
 
     margin: 12px;
@@ -136,7 +140,7 @@
     height: 12px;
 }
 
-@media (max-width:1365px) {
+@media (max-width: 1365px) {
     .categories {
         display: flex;
         flex-direction: column;
@@ -217,7 +221,7 @@
     }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .categories {
         display: flex;
         flex-direction: column;

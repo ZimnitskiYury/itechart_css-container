@@ -13,7 +13,7 @@
     <!-- HEADER IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
     <header class="header">
         <div class="header__logo">
-            <a href="./index.html" class="header__logo-link">Cakes</a>
+            <a href="/index.html" class="header__logo-link">Cakes</a>
         </div>
         <a class="header__burger" href="/next">
             <svg xmlns="http://www.w3.org/2000/svg" class="header__burger-ico" viewBox="0 0 512 512"><path  d="M491.318 235.318H20.682C9.26 235.318 0 244.577 0 256s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zM491.318 78.439H20.682C9.26 78.439 0 87.699 0 99.121c0 11.422 9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zM491.318 392.197H20.682C9.26 392.197 0 401.456 0 412.879s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682s-9.259-20.682-20.682-20.682z"/></svg>
@@ -52,13 +52,15 @@
 
         <ul class="categories__container">
             <li class="categories__container-item">
-                <a href="/next" class="categories__name">Классические</a>
-                <h4 class="categories__count">24 вида</h4>
-                <img class="categories__image" src="./assets/img/category-classic.png" alt="category-classic">
-                <div class="categories__more">
-                    <a class="categories__more-link" href="/next">Смотреть</a>
-                    <a href="/next"><img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
-                </div>
+                <a href="/next">
+                    <span class="categories__name">Классические</span>
+                    <h4 class="categories__count">24 вида</h4>
+                    <img class="categories__image" src="./assets/img/category-classic.png" alt="category-classic">
+                    <div class="categories__more">
+                        <a class="categories__more-link" href="/next">Смотреть</a>
+                        <a href="/next"><img class="categories__more-arrow" src="./assets/img/more-arrow.png" alt="more-arrow"></a>
+                    </div>
+                </a>
             </li>
 
             <li class="categories__container-item">
@@ -116,10 +118,10 @@
 
     <!-- INDIVIDUAL ORDER WORKS ONLY IN DESTOP VERSION  -->
     <section class="individual-order" id="individual-order">
-        <div class="individual-order__header">
+        <header class="individual-order__header">
             <h2 class="individual-order__title">Индивидуальный заказ</h2>
             <span class="individual-order__annotation">Соберите торт в 3 шага</span>
-        </div>
+        </header>
         <ol class="individual-order__steps">
             <li>
                 <p class="individual-order__step-header">Выберите начинку</p>
