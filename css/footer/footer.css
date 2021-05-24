@@ -1,28 +1,23 @@
 @import url("./nav-list.css");
-footer {
+.footer {
     display: flex;
-    flex-direction: column;
 
     width: 1220px;
     height: 130px;
-    padding: 30px 73px 0 73px;
+    padding: 30px 73px 0;
 
     background-color: #e8e8e8;
-}
-
-.footer__menu {
-    display: flex;
-    flex-direction: row;
-
-    width: 1220px;
 
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer__logo {
     display: flex;
 
+    height: 28px;
+
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -34,37 +29,34 @@ footer {
     font-family: "Playfair Display Bold";
     font-size: 28px;
 }
-
+.footer__nav-menu {
+    width: 734px;
+    margin: 0 160px;
+}
 .footer__social {
     display: flex;
 
     width: 72px;
-    height: 37px;
+    margin-left: auto;
 
-    align-items: center;
     justify-content: space-between;
 }
 
-.footer__credentials {
-    display: flex;
-    flex-direction: column;
-
-    width: 1220px;
-
-    align-items: center;
+.footer__phone-link {
+    display: none;
 }
 
-.footer__credentials-line {
-    width: 1222px;
-    margin-top: 42px;
+.footer__line {
+    width: 1210px;
+    height: 1px;
+    margin: 42px auto 0;
 
     opacity: 0.2;
 }
 
-.footer__credentials-copyright {
-    margin-top: 10px;
+.footer__copyright {
+    margin: 10px auto 0;
 
-    text-align: center;
     letter-spacing: 0.48px;
 
     opacity: 0.5;
@@ -73,190 +65,88 @@ footer {
     font-size: 12px;
 }
 
-.footer__credentials-tablet {
-    display: none;
-}
-
-.footer__credentials-mobile {
-    display: none;
-}
-
 @media (max-width: 1365px) {
-    footer {
+    .footer {
         width: 94.8%;
         height: 104px;
-        margin: 0;
-        padding: 35px 2.6% 0 2.6%;
+        padding: 35px 2.6% 0;
 
         background-color: #898989;
     }
-    .footer__menu {
-        width: 100%;
-        margin-top: 0;
-
-        align-items: flex-start;
+    .footer__nav-menu {
+        width: 78.65%;
+        margin-right: 0;
+        margin-left: auto;
     }
     .logo__text {
         letter-spacing: 0.9px;
 
         color: #ffffff;
 
-        font-family: "Playfair Display Bold";
         font-size: 18px;
     }
+
     .footer__social {
-        display: none;
-    }
-    .footer__credentials {
-        display: none;
-    }
-    .footer__credentials-mobile {
-        display: none;
-    }
-    .footer__credentials-tablet {
-        display: block;
+        margin-right: auto;
+        margin-left: 32px;
 
-        width: 100%;
+        order: 4;
     }
-    .footer__credentials-line {
-        width: 100%;
-        margin-top: 30px;
 
-        opacity: 0.1;
-        color: #ffffff;
+    .footer__line {
+        width: 98%;
+        margin-top: 36px;
     }
-    .footer__credentials-socials {
-        display: flex;
-        flex-direction: row;
 
-        align-items: center;
-        justify-content: center;
-    }
-    .footer__credentials-copyright {
-        margin-top: 0;
-        margin-right: 32px;
-
-        text-align: center;
-
-        opacity: 0.5;
-
-        font-family: Roboto;
-        font-size: 12px;
-    }
-    .footer__credentials-socials > a:first-of-type {
-        margin-right: 20px;
+    .footer__copyright {
+        margin: 0;
+        margin-left: auto;
     }
 }
 
 @media (max-width: 767px) {
-    footer {
-        display: flex;
+    .footer {
         flex-direction: column;
 
         width: 87.5%;
         height: 369px;
-        margin: 0;
-        padding: 45px 6.25% 0 6.25%;
-
-        background-color: #898989;
+        padding: 45px 6.25% 0;
 
         align-items: flex-start;
     }
-    .footer__menu {
-        flex-direction: column;
-
+    .footer__nav-menu {
         width: 100%;
-        margin-top: 0;
-
-        align-self: flex-start;
-    }
-    .footer__logo {
-        margin-left: 0;
+        height: 174px;
+        margin: 30px 0 18px;
     }
     .logo__text {
         letter-spacing: 1.4px;
 
-        color: #ffffff;
-
-        font-family: "Playfair Display Bold";
         font-size: 28px;
     }
-    .footer__social {
-        display: none;
-    }
-    .footer__credentials {
-        display: none;
-    }
-    .footer__credentials-tablet {
-        display: none;
-    }
-    .footer__credentials-mobile {
-        display: flex;
-        flex-direction: column;
-    }
-    .footer__credentials-line {
-        width: 100%;
-        margin-top: 0;
+    .footer__phone-link {
+        display: block;
 
-        opacity: 0.1;
-        color: #ffffff;
-    }
-    .footer__credentials-socials {
-        display: flex;
-        flex-direction: row;
-
-        margin-bottom: 28px;
-
-        opacity: 0.2;
-
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    .footer__credentials-socials-instagram {
-        width: 23px;
-        height: 23px;
-        margin-right: 20px;
-
-        background-image: url("../../assets/svg/instagram-logo.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 23px;
-    }
-    .footer__credentials-socials-instagram:hover {
-        box-shadow: 0 2px 7.04px 0.96px rgba(255, 0, 67, 0.2);
-    }
-    .footer__credentials-socials-vk {
-        width: 23px;
-        height: 23px;
-
-        background-image: url("../../assets/svg/vk.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 23px;
-    }
-    .footer__credentials-socials-vk:hover {
-        box-shadow: 0 2px 7.04px 0.96px rgba(255, 0, 67, 0.2);
-    }
-    .footer__credentials-copyrights {
-        margin-top: 0;
-        margin-right: 32px;
-
-        text-align: center;
-
-        opacity: 0.5;
-
-        font-family: Roboto;
-        font-size: 12px;
-    }
-    .footer__credentials-phone-link {
-        margin-bottom: 28px;
+        margin-bottom: 30px;
 
         color: #ffffff;
 
         font-family: "Circe";
         font-size: 14px;
     }
-    .contact-info__phone-link:hover {
-        color: #f50049;
+    .footer__social {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .footer__line {
+        margin-top: 0;
+        margin-bottom: 6px;
+
+        order: 5;
+    }
+    .footer__copyright {
+        margin: 0;
+
+        order: 6;
     }
 }

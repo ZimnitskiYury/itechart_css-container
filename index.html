@@ -605,20 +605,17 @@
     </section>
 
     <!-- FOOTER IS FULLTESTED AND WORKED FOR DESKTOP/TABLET/MOBILE -->
-    <footer>
-      <div class="footer__menu">
+    <footer class="footer">
         <div class="footer__logo">
-          <h5 class="logo__text">Cakes</h5>
+          <a href="/index.html" class="logo__text">Cakes</a>
         </div>
 
-        <ul class="nav-list">
+        <ul class="footer__nav-menu nav-list">
           <li class="nav-list__item">
             <a class="nav-list__link" href="#categories">Наши торты</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#individual-order"
-              >Индивидуальный заказ</a
-            >
+            <a class="nav-list__link" href="#individual-order">Индивидуальный заказ</a>
           </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href="#reviews">Отзывы</a>
@@ -634,6 +631,10 @@
           </li>
         </ul>
 
+        <a class="footer__phone-link" href="tel:+79068999296"
+          ><i class="fas fa-phone-alt"></i> +7 906 899 92 96
+        </a>
+
         <div class="footer__social">
           <a href="https://instagram.com"
             ><img src="./assets/img/social_instagram.png" alt="Наш инстаграм"
@@ -642,38 +643,10 @@
             ><img src="./assets/img/social_vk.png" alt="Наш Вк"
           /></a>
         </div>
-      </div>
-      <div class="footer__credentials">
-        <hr class="footer__credentials-line" />
-        <span class="footer__credentials-copyright">&#169; 2018 Cakes</span>
-      </div>
-      <div class="footer__credentials-tablet">
-        <hr class="footer__credentials-line" />
-        <div class="footer__credentials-socials">
-          <span class="footer__credentials-copyright">&#169; 2018 Cakes</span>
-          <a href="https://instagram.com"
-            ><img src="./assets/img/social_instagram.png" alt="Наш инстаграм"
-          /></a>
-          <a href="https://vk.com"
-            ><img src="./assets/img/social_vk.png" alt="Наш Вк"
-          /></a>
-        </div>
-      </div>
-      <div class="footer__credentials-mobile">
-        <a class="footer__credentials-phone-link" href="tel:+79068999296"
-          ><i class="fas fa-phone-alt"></i> +7 906 899 92 96
-        </a>
-        <div class="footer__credentials-socials">
-          <a
-            class="footer__credentials-socials-instagram"
-            href="https://instagram.com"
-          >
-          </a>
-          <a class="footer__credentials-socials-vk" href="https://vk.com"> </a>
-        </div>
-        <hr class="footer__credentials-line" />
-        <span class="footer__credentials-copyright">&#169; 2018 Cakes</span>
-      </div>
+
+        <hr class="footer__line" />
+        <span class="footer__copyright">&#169; 2018 Cakes</span>
+     
     </footer>
     <script type="text/javascript">
       $(document).ready(function () {

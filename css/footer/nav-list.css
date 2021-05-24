@@ -1,10 +1,8 @@
 .nav-list {
     display: flex;
-    flex-direction: row;
 
-    width: 734.75px;
+    width: 100%;
 
-    align-self: flex-end;
     justify-content: space-between;
 }
 
@@ -16,14 +14,9 @@
 }
 
 @media (max-width: 1365px) {
-    .nav-list {
-        width: 82.96%;
-        margin: 0;
-    }
     .nav-list__link {
         color: #ffffff;
 
-        font-family: "Circe";
         font-size: 12px;
     }
 }
@@ -31,20 +24,8 @@
 @media (max-width: 767px) {
     .nav-list {
         flex-direction: column;
-
-        width: auto;
-        height: 176px;
-        margin: 0;
-        margin-bottom: 20px;
-        padding-top: 24px;
-
-        align-self: flex-start;
-        justify-content: space-between;
     }
     .nav-list__link {
-        color: #ffffff;
-
-        font-family: "Circe";
         font-size: 14px;
     }
 }
