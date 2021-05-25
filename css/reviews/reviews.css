@@ -47,11 +47,11 @@
     box-shadow: 0 2px 7.04px 0.96px rgba(255, 0, 67, 0.2);
 }
 
-.content-arrow_left {
+.reviews__content-arrow_left {
     margin-right: 100px;
 }
 
-.content-arrow_right {
+.reviews__content-arrow_right {
     margin-left: 45px;
 }
 
@@ -85,10 +85,10 @@
     .reviews__content {
         width: 87.5%;
     }
-    .content-arrow_left {
+    .reviews__content-arrow_left {
         margin-right: 55px;
     }
-    .content-arrow_right {
+    .reviews__content-arrow_right {
         margin: 0;
     }
 }
