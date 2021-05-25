@@ -1,6 +1,5 @@
 .about-us {
     display: flex;
-    flex-direction: row;
 
     width: 1220px;
     height: 516px;
@@ -66,7 +65,6 @@
     }
     .about-us__title {
         font-size: 28px;
-        line-height: auto;
     }
     .about-us__sub-header {
         font-size: 26px;
@@ -90,25 +88,11 @@
         flex-direction: column;
 
         width: 87.5%;
-        height: auto;
-        padding: 48px 6.25% 0 6.25%;
+        padding: 48px 6.25% 0;
 
         align-items: center;
     }
-    .about-us__title {
-        font-size: 28px;
-        line-height: auto;
-    }
-    .about-us__sub-header {
-        font-size: 26px;
-    }
-    .about-us__dictum-title {
-        font-size: 15px;
-    }
-    .about-us__dictum-annotation {
-        font-size: 14px;
-        line-height: 16.8px;
-    }
+
     .about-us__content {
         width: 100%;
 
