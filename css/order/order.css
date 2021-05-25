@@ -3,19 +3,17 @@
     flex-direction: column;
 
     height: 703px;
-    padding: 0 73px;
+    padding: 126px 73px 0;
 
-    background-image: url("../../assets/img/order-background.png");
-    background-repeat: no-repeat;
+    color: #ffffff;
+    background: no-repeat url("/assets/img/order-background.png");
 
     align-items: flex-end;
-    justify-content: flex-start;
 }
 
 .order__instruction-header {
+    width: 475px;
     padding-left: 20px;
-
-    color: #ffffff;
 
     font-family: "Playfair Display Bold";
     font-size: 40px;
@@ -26,18 +24,14 @@
     flex-direction: column;
 
     width: 475px;
-    padding-top: 126px;
 
     counter-reset: item;
 }
 
 .order__step {
     display: flex;
-    flex-direction: row;
 
     margin-bottom: 14px;
-
-    align-items: flex-start;
 }
 
 .order__step:before {
@@ -50,12 +44,8 @@
     counter-increment: item;
     text-align: center;
 
-    color: #ffffff;
-
     font-family: "Playfair Display Bold";
     font-size: 64.25px;
-
-    align-self: flex-start;
 }
 
 .order__step-description {
@@ -63,17 +53,12 @@
     flex-direction: column;
 
     padding-top: 20px;
-
-    align-items: flex-start;
-    justify-content: flex-start;
 }
 
 .order__title {
     margin-bottom: 4px;
 
     letter-spacing: 0.21px;
-
-    color: white;
 
     font-family: "Circe Bold";
     font-size: 21px;
@@ -83,10 +68,6 @@
 .order__annotation {
     width: auto;
 
-    letter-spacing: 0;
-
-    color: white;
-
     font-family: "Circe";
     font-size: 20px;
     line-height: 24px;
@@ -95,20 +76,17 @@
 @media (max-width:1365px) {
     .order {
         height: 420px;
-        padding: 0;
-        padding-left: 35%;
+        padding: 52px 0 0 35%;
 
-        background-image: url("../../assets/img/order-background-tablet.png"), linear-gradient(#e63a41, #d52835);
-        background-repeat: no-repeat;
-        background-position: left;
+        background: left no-repeat url("/assets/img/order-background-tablet.png"), linear-gradient(#e63a41, #d52835);
 
         align-items: center;
     }
     .order__instruction {
         width: 375px;
-        padding-top: 52px;
     }
     .order__instruction-header {
+        width: 375px;
         padding-left: 8px;
 
         font-size: 28px;
@@ -131,10 +109,7 @@
         line-height: 15px;
     }
     .order__annotation {
-        letter-spacing: 0;
-
         font-size: 14px;
-        line-height: auto;
     }
 }
 
@@ -142,46 +117,26 @@
     .order {
         width: 87%;
         height: 482px;
-        padding: 0 6.25%;
+        padding: 36px 6.25% 0;
 
-        background-image: url("../../assets/img/order-background-mobile.png");
-        background-position: bottom;
+        background: bottom no-repeat url("/assets/img/order-background-mobile.png");
         background-size: cover;
-
-        align-items: center;
     }
     .order__instruction {
         width: 100%;
-        padding-top: 36px;
     }
     .order__instruction-header {
+        width: 100%;
         padding-left: 0;
 
-        font-size: 24px;
+        text-align: center;
 
-        align-self: center;
+        font-size: 24px;
     }
     .order__step:before {
-        min-width: 30px;
         height: 35px;
-
-        font-size: 35px;
     }
     .order__step-description {
         padding-top: 10px;
-    }
-    .order__title {
-        margin-bottom: 6px;
-
-        letter-spacing: 0.15px;
-
-        font-size: 15px;
-        line-height: 15px;
-    }
-    .order__annotation {
-        letter-spacing: 0;
-
-        font-size: 14px;
-        line-height: auto;
     }
 }
