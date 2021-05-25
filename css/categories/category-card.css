@@ -1,0 +1,88 @@
+.category-card {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    color: #2d2829;
+
+    font-family: "Circe";
+}
+
+.category-card__name {
+    z-index: 1;
+
+    margin-bottom: 5px;
+
+    font-size: 24px;
+}
+
+.category-card__count {
+    z-index: 1;
+
+    opacity: 0.7;
+
+    font-size: 20px;
+}
+
+.category-card__image {
+    z-index: 0;
+
+    height: 100%;
+    margin-top: -44px;
+}
+
+.category-card__more {
+    z-index: 1;
+
+    display: flex;
+
+    width: 120px;
+    height: 20px;
+    margin-top: -30px;
+
+    background: no-repeat right url("../../assets/img/more-arrow.png");
+
+    align-items: center;
+    align-self: flex-end;
+    justify-content: space-between;
+}
+.category-card:hover .category-card__more:before {
+    margin-right: 20px;
+
+    content: "Смотреть";
+
+    font-size: 20px;
+}
+
+@media (max-width: 1365px) {
+    .category-card__name {
+        font-size: 14.31px;
+    }
+    .category-card__count {
+        font-size: 12px;
+    }
+    .category-card__image {
+        margin-top: -40px;
+
+        align-self: center;
+    }
+    .category-card__more {
+        width: 76px;
+        margin-top: -10px;
+    }
+    .category-card:hover .category-card__more:before {
+        font-size: 12px;
+    }
+}
+@media (max-width: 767px) {
+    .category-card__name {
+        font-size: 14px;
+    }
+    .category-card__image {
+        margin-top: -31px;
+    }
+    .category-card__more {
+        width: 56px;
+    }
+}
