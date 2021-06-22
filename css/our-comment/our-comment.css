@@ -1,0 +1,79 @@
+.our-comment {
+    display: flex;
+    flex-direction: column;
+
+    width: 58.42%;
+    height: auto;
+    margin-top: 112px;
+    margin-bottom: 120px;
+    padding: 0 20.79%;
+
+    align-items: center;
+    justify-content: center;
+}
+.our-comment::before {
+    content: "’’";
+
+    color: #fffefe;
+
+    font-family: "Playfair Display Bold";
+    font-size: 140px;
+    line-height: 60px;
+}
+
+.our-comment__annotation {
+    display: block;
+
+    width: 100%;
+    margin-bottom: 46px;
+
+    text-align: center;
+
+    color: #2d2829;
+
+    font-family: "Playfair Display Bold Italic";
+    font-size: 25px;
+    line-height: 1.485;
+}
+
+.our-comment__autograph {
+    width: 149px;
+    height: 73px;
+}
+
+@media (max-width:1365px) {
+    .our-comment {
+        width: 58.86%;
+        padding: 0 20.57%;
+    }
+    .our-comment::before {
+        font-size: 77px;
+    }
+    .our-comment__annotation {
+        font-size: 14px;
+    }
+    .our-comment__autograph {
+        width: 82px;
+        height: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .our-comment {
+        width: 87%;
+        padding: 0 6.25%;
+    }
+    .our-comment::before {
+        font-size: 60px;
+    }
+    .our-comment__annotation {
+        margin-bottom: 20px;
+
+        font-size: 13px;
+        line-height: 1.20;
+    }
+    .our-comment__autograph {
+        width: 64px;
+        height: 31px;
+    }
+}

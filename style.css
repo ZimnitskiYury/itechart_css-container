@@ -1,0 +1,129 @@
+@import url("./css/reset.css");
+@import url("./css/main-page/main-page.css");
+@import url("./css/individual-order/individual-order.css");
+@import url("./css/header/header.css");
+@import url("./css/reviews/reviews.css");
+@import url("./css/about-us/about-us.css");
+@import url("./css/our-advantages/our-advantages.css");
+@import url("./css/our-comment/our-comment.css");
+@import url("./css/order/order.css");
+@import url("./css/contacts/contacts.css");
+@import url("./css/footer/footer.css");
+@import url("./css/categories/categories.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+    font-family: "Circe";
+    font-weight: normal;
+    font-style: normal;
+
+    src: local("Circe"), url("./assets/fonts/CRC55.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Circe Bold";
+    font-weight: normal;
+    font-style: normal;
+
+    src: local("Circe Bold"), url("./assets/fonts/CRC65.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Playfair Display Bold";
+    font-weight: normal;
+    font-style: normal;
+
+    src: local("Playfair Display Bold"), url("./assets/fonts/PlayfairDisplay-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Playfair Display Bold Italic";
+    font-weight: normal;
+    font-style: normal;
+
+    src: local("Playfair Display Bold"), url("./assets/fonts/PlayfairDisplay-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Intro Script Base";
+    font-weight: normal;
+    font-style: normal;
+
+    src: local("Intro Script H2 Base"), url("./assets/fonts/IntroScriptR-H2Base.woff") format("woff");
+}
+
+html {
+    max-width: 1366px;
+    margin: 0 auto;
+
+    background-color: lightgray;
+}
+
+@media (max-width:1365px) {
+    html {
+        max-width: 1365px;
+    }
+}
+
+@media (max-width:767px) {
+    html {
+        max-width: 767px;
+    }
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+
+    background-color: #fbebea;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: unset;
+}
+
+a:hover {
+    color: #f50049;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+button {
+    width: 100%;
+    height: 51px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    border: none;
+    border-radius: 25.5pt;
+    outline: none;
+    background-color: #f50049;
+
+    font-family: "Circe Regular";
+    font-size: 13px;
+}
+
+@media (max-width:1365px) {
+    button {
+        width: 100%;
+        height: 44px;
+
+        font-size: 10px;
+    }
+}
+
+button:hover {
+    box-shadow: 0 5px 7.04px 0.96px rgba(255, 0, 67, 0.3);
+}
+
+img {
+    float: left;
+}

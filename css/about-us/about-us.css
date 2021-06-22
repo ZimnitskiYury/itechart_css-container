@@ -1,0 +1,108 @@
+.about-us {
+    display: flex;
+
+    width: 1220px;
+    height: 516px;
+    margin: 0 auto;
+    padding-top: 110px;
+}
+
+.about-us__profile-photo {
+    width: 508px;
+    height: 508px;
+    margin-left: auto;
+}
+
+.about-us__content {
+    width: 50%;
+}
+
+.about-us__title {
+    margin-top: 6px;
+
+    letter-spacing: 0.4px;
+
+    font-family: "Playfair Display Bold";
+    font-size: 40px;
+    line-height: 66px;
+}
+
+.about-us__sub-header {
+    margin-top: 16px;
+
+    color: #32313d;
+
+    font-family: "Intro Script Base";
+    font-size: 35px;
+}
+
+.about-us__dictum {
+    margin: 10px 0;
+}
+
+.about-us__dictum-title {
+    color: #2d2829;
+
+    font-family: "Circe Bold";
+    font-size: 20px;
+}
+
+.about-us__dictum-annotation {
+    margin-top: 8px;
+
+    color: #2d2829;
+
+    font-family: "Circe";
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media (max-width: 1365px) {
+    .about-us {
+        width: 88%;
+        height: auto;
+        padding: 115px 6% 0;
+    }
+    .about-us__title {
+        font-size: 28px;
+    }
+    .about-us__sub-header {
+        font-size: 26px;
+    }
+    .about-us__dictum-title {
+        font-size: 15px;
+    }
+    .about-us__dictum-annotation {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+    .about-us__profile-photo {
+        width: 310px;
+        height: 310px;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-us {
+        flex-direction: column;
+
+        width: 87.5%;
+        padding: 48px 6.25% 0;
+
+        align-items: center;
+    }
+
+    .about-us__content {
+        width: 100%;
+
+        order: 2;
+    }
+    .about-us__profile-photo {
+        width: 210px;
+        height: 210px;
+        margin: 0;
+
+        order: 1;
+    }
+}

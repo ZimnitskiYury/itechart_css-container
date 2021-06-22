@@ -1,0 +1,36 @@
+@import url("./communication.css");
+.contact-info__list {
+    display: flex;
+    flex-direction: column;
+
+    width: 344px;
+    padding-top: 26px;
+}
+
+.contact-info__list-item {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+@media (max-width:1365px) {
+    .contact-info__list {
+        width: 38.46%;
+        padding-top: 22px;
+    }
+    .contact-info__list-item {
+        margin-bottom: 22px;
+    }
+}
+
+@media (max-width:767px) {
+    .contact-info__list {
+        width: 100%;
+        padding-top: 28px;
+    }
+    .contact-info__list-item {
+        margin-bottom: 22px;
+    }
+}

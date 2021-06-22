@@ -1,0 +1,46 @@
+.pros {
+    display: flex;
+
+    width: 460px;
+
+    justify-content: space-between;
+}
+
+.pros__item {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pros__annotation {
+    display: block;
+
+    margin-left: 12px;
+
+    font-family: "Circe";
+    font-size: 14px;
+    line-height: 18px;
+}
+
+@media (max-width: 1365px) {
+    .pros {
+        width: 446px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pros {
+        flex-direction: column;
+
+        width: auto;
+        margin-bottom: 36px;
+    }
+    .pros__item {
+        height: 45px;
+    }
+    .pros_item-image {
+        width: 33px;
+        height: 33px;
+    }
+}

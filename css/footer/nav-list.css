@@ -1,0 +1,31 @@
+.nav-list {
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-between;
+}
+
+.nav-list__link {
+    color: #2d2829;
+
+    font-family: "Circe";
+    font-size: 16px;
+}
+
+@media (max-width: 1365px) {
+    .nav-list__link {
+        color: #ffffff;
+
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-list__link {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,142 @@
+.order {
+    display: flex;
+    flex-direction: column;
+
+    height: 703px;
+    padding: 126px 73px 0;
+
+    color: #ffffff;
+    background: no-repeat url("/assets/img/order-background.png");
+
+    align-items: flex-end;
+}
+
+.order__instruction-header {
+    width: 475px;
+    padding-left: 20px;
+
+    font-family: "Playfair Display Bold";
+    font-size: 40px;
+}
+
+.order__instruction {
+    display: flex;
+    flex-direction: column;
+
+    width: 475px;
+
+    counter-reset: item;
+}
+
+.order__step {
+    display: flex;
+
+    margin-bottom: 14px;
+}
+
+.order__step:before {
+    display: block;
+
+    min-width: 55px;
+    height: 65px;
+
+    content: counter(item) "";
+    counter-increment: item;
+    text-align: center;
+
+    font-family: "Playfair Display Bold";
+    font-size: 64.25px;
+}
+
+.order__step-description {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+}
+
+.order__title {
+    margin-bottom: 4px;
+
+    letter-spacing: 0.21px;
+
+    font-family: "Circe Bold";
+    font-size: 21px;
+    line-height: 27px;
+}
+
+.order__annotation {
+    width: auto;
+
+    font-family: "Circe";
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media (max-width:1365px) {
+    .order {
+        height: 420px;
+        padding: 52px 0 0 35%;
+
+        background: left no-repeat url("/assets/img/order-background-tablet.png"), linear-gradient(#e63a41, #d52835);
+
+        align-items: center;
+    }
+    .order__instruction {
+        width: 375px;
+    }
+    .order__instruction-header {
+        width: 375px;
+        padding-left: 8px;
+
+        font-size: 28px;
+    }
+    .order__step:before {
+        min-width: 30px;
+        height: 38px;
+
+        font-size: 36px;
+    }
+    .order__step-description {
+        padding-top: 14px;
+    }
+    .order__title {
+        margin-bottom: 6px;
+
+        letter-spacing: 0.15px;
+
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .order__annotation {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:767px) {
+    .order {
+        width: 87%;
+        height: 482px;
+        padding: 36px 6.25% 0;
+
+        background: bottom no-repeat url("/assets/img/order-background-mobile.png");
+        background-size: cover;
+    }
+    .order__instruction {
+        width: 100%;
+    }
+    .order__instruction-header {
+        width: 100%;
+        padding-left: 0;
+
+        text-align: center;
+
+        font-size: 24px;
+    }
+    .order__step:before {
+        height: 35px;
+    }
+    .order__step-description {
+        padding-top: 10px;
+    }
+}

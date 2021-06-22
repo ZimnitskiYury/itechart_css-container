@@ -1,0 +1,106 @@
+@import url("./pros.css");
+.main-page {
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    height: 941px;
+    margin-top: 20px;
+    padding: 0 5.34%;
+
+    background: right no-repeat url("/assets/img/main-background.png");
+}
+.main-page__header {
+    margin-top: 130px;
+    margin-bottom: 62px;
+}
+.main-page__header-title {
+    margin-bottom: 26px;
+
+    letter-spacing: 5.87px;
+
+    color: #2e2829;
+
+    font-family: "Playfair Display Bold";
+    font-size: 78.3px;
+    line-height: 70px;
+}
+
+.main-page__header-annotation {
+    color: #32313d;
+
+    font-family: "Intro Script Base";
+    font-size: 40.83px;
+}
+
+.main-page__button {
+    width: 226px;
+    height: 51px;
+    margin-bottom: 128px;
+}
+
+@media (max-width: 1365px) {
+    .main-page {
+        height: 700px;
+        margin-top: 13px;
+
+        background: no-repeat right top url("/assets/img/main-background-tablet.png");
+    }
+    .main-page__header {
+        margin-top: 89px;
+        margin-bottom: 54px;
+    }
+    .main-page__header-title {
+        letter-spacing: 4.5px;
+
+        font-size: 60px;
+        line-height: 55px;
+    }
+    .main-page__header-annotation {
+        font-size: 36px;
+    }
+    .main-page__button {
+        margin-bottom: 148px;
+
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-page {
+        width: 87%;
+        height: 435px;
+        margin-top: 0;
+        padding: 0 6.25% 40px;
+
+        background: top no-repeat url("/assets/img/main-background-mobile.png");
+
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .main-page__header {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 15px;
+
+        align-items: center;
+    }
+    .main-page__header-title {
+        margin-bottom: 21px;
+
+        text-align: center;
+        letter-spacing: 3px;
+
+        font-size: 40px;
+        line-height: 0.9;
+    }
+    .main-page__header-annotation {
+        font-size: 22px;
+    }
+    .main-page__button {
+        margin-bottom: 0;
+
+        order: 4;
+    }
+}

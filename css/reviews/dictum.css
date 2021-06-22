@@ -1,0 +1,119 @@
+.dictum {
+    display: flex;
+
+    align-items: center;
+}
+
+.dictum__user-photo {
+    min-width: 200px;
+    margin-right: 20px;
+}
+
+.dictum__content {
+    display: flex;
+    flex-direction: column;
+
+    color: #2d2829;
+
+    font-family: "Circe";
+}
+
+.dictum__header {
+    display: flex;
+    flex-direction: column;
+}
+
+.dictum__user {
+    font-family: "Circe Bold";
+    font-size: 27px;
+}
+
+.dictum__user-info {
+    margin-top: 6px;
+
+    font-size: 20px;
+}
+
+.dictum__annotation {
+    margin-top: 12px;
+    margin-bottom: 8px;
+
+    font-size: 18.42px;
+    line-height: 24.6px;
+}
+
+.dictum__more {
+    margin-right: 22px;
+
+    opacity: 0.7;
+    color: #f50049;
+
+    font-size: 15.9px;
+
+    align-self: flex-end;
+}
+
+.dictum__more:hover {
+    text-decoration: underline;
+
+    text-shadow: 0 2px 10px rgba(255, 34, 34, 0.5);
+}
+
+@media (max-width:1365px) {
+    .dictum__user {
+        font-size: 16px;
+    }
+    .dictum__user-photo {
+        min-width: 110px;
+        min-height: 110px;
+        margin-bottom: 10px;
+    }
+    .dictum__user-info {
+        font-size: 14px;
+    }
+    .dictum__annotation {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+    .dictum__more {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:767px) {
+    .dictum {
+        flex-direction: column;
+    }
+    .dictum__user-photo {
+        width: 100px;
+        height: 100px;
+        margin: 0 0 10px;
+    }
+    .dictum__content {
+        align-items: center;
+        justify-content: center;
+    }
+    .dictum__header {
+        align-items: center;
+        justify-content: center;
+    }
+    .dictum__user {
+        font-size: 14px;
+    }
+    .dictum__user-info {
+        font-size: 12px;
+    }
+    .dictum__annotation {
+        text-align: center;
+
+        font-size: 12px;
+        line-height: 14.4px;
+    }
+    .dictum__more {
+        margin: 0;
+
+        font-size: 12px;
+
+        align-self: center;
+    }
+}
